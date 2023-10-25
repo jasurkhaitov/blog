@@ -14,7 +14,7 @@ export default function Navbar() {
     barsClass === '' ? setBarsClass('open') : setBarsClass('')
     navbar === 'delay-200 duration-150' ? setNavbar('bg-FmodalBackgroundColor delay-250 duration-150') : setNavbar('delay-200 duration-150')
     right === 'right-[-500px] delay-200 duration-150' ? setRight('right-0 delay-200 duration-150') : setRight('right-[-500px] delay-200 duration-150')
-  }
+  } 
 
   return (
     <nav className="bg-black m-auto px-[15px] py-[15px] md:py-[20px] md:px-[0px] fixed w-full top-0 z-0">

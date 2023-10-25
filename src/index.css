@@ -13,7 +13,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 #closeBars {
-    width: 35px;
+    width: 28px;
     height: 25px;
     position: relative;
     -webkit-transform: rotate(0deg);
@@ -30,7 +30,7 @@
   #closeBars span {
     display: block;
     position: absolute;
-    height: 5px;
+    height: 4px;
     width: 100%;
     background: white;
     border-radius: 5px;
@@ -51,11 +51,11 @@
   }
   
   #closeBars span:nth-child(2) {
-    top: 11px;
+    top: 10px;
   }
   
   #closeBars span:nth-child(3) {
-    top: 22px;
+    top: 20px;
   }
   
   #closeBars.open span:nth-child(1) {
