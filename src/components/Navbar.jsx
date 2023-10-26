@@ -17,7 +17,7 @@ export default function Navbar() {
   } 
 
   return (
-    <nav className="bg-black m-auto px-[15px] py-[15px] md:py-[20px] md:px-[0px] fixed w-full top-0 z-0">
+    <nav className="bg-[#0a101e] bg-opacity-1 md:bg-opacity-[0.93] m-auto px-[15px] py-[15px] md:py-[20px] md:px-[0px] fixed w-full top-0">
 
       <div className="container m-auto flex items-center justify-between">
 
@@ -51,20 +51,22 @@ export default function Navbar() {
 
       </div>
 
-      <div className={`${navbar} h-full w-full top-[70px] md:top-[90px] fixed left-0 right-0 m-0 p-0 z-1`}>
-        <div className={`${right} absolute h-full w-[320px] z-20 top-0 bg-black flex flex-col items-center justify-between pt-[30px] pb-[100px]`}>
+      <div className={`${navbar} h-full w-full top-[70px] md:top-[90px] fixed left-0 right-0 m-0 p-0 z-111`}>
+        <div className={`${right} absolute h-full w-[320px] top-[0px] bg-[#0a101e] flex flex-col items-center justify-between pt-[30px] pb-[100px] z-0`}>
           <ul className="flex flex-col gap-[20px]">
+
             {
               menuNav.map((element, value) => {
                 return <li key={element.value} className={`${activeMenu === element.linkName ? 'text-Pyellow text-center' : 'text-center text-white'} cursor-pointer text-base font-medium delay-100 duration-150 hover:text-Pyellow hover:delay-100 hover:duration-150`} onClick={() => setActiveMenu(element.linkName)} >{element.linkName}</li>
               })
             }
-          </ul>
 
-          <button className={`${style.button}`}>
-            <span className="text-base font-medium text-PblackColor">Download CV</span>
-            <i class="fa-solid fa-download text-[18px] ml-[7px]"></i>
-          </button>
+            <button className={`${style.button} mt-[20px]`}>
+              <span className="text-base font-medium text-PblackColor">Download CV</span>
+              <i class="fa-solid fa-download text-[18px] ml-[7px]"></i>
+            </button>
+
+          </ul>
         </div>
       </div>
 
