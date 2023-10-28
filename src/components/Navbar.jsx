@@ -42,10 +42,10 @@ export default function Navbar() {
             })
           }
 
-          <button className={`${style.button} hidden lg:block`}>
+          <a href="../assets/Jasurbek_Xaitov_CV.pdf" download={'../assets/Jasurbek_Xaitov_CV.pdf'} className={`${style.button} hidden lg:block`}>
             <span className="text-base font-medium text-PblackColor">Download CV</span>
             <i class="fa-solid fa-download text-[18px] ml-[7px]"></i>
-          </button>
+          </a>
           
         </ul>
 

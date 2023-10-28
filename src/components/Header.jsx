@@ -23,22 +23,22 @@ export default function Header() {
 
             <div className='md:flex justify-center items-center gap-[20px] px-[12px] py-[12px] bg-[#101624] mt-[15px] rounded-[50px] border-[1px] border-[#232935] hidden'>
 
-              <a href="#!" className={`${style.aHrefLink}`}>
+              <a href="https://www.linkedin.com/in/jasur-xaitov-181164250!" className={`${style.aHrefLink}`}>
                 <Icon icon="skill-icons:linkedin" color="blue" width="25" />
                 <span className={`${style.spanLink}`}>Linkedln</span>
               </a>
 
-              <a href="#!" className={`${style.aHrefLink}`}>
+              <a href="https://github.com/jasurkhaitov" className={`${style.aHrefLink}`}>
                 <Icon icon="fa:github-square" color="white" width="25" />
                 <span className={`${style.spanLink}`}>GitHub</span>
               </a>
 
-              <a href="#!" className={`${style.aHrefLink}`}>
+              <a href="https://t.me/jasurkhaitov" className={`${style.aHrefLink}`}>
                 <Icon icon="logos:telegram" color="blue" width="25" />
                 <span className={`${style.spanLink}`}>Telegram</span>
               </a>
 
-              <a href="#!" className={`${style.aHrefLink}`}>
+              <a href="mailto:xaitovjasur0@gmail.com!" className={`${style.aHrefLink}`}>
                 <Icon icon="logos:google-gmail" color="blue" width="25" />
                 <span className={`${style.spanLink}`}>Email</span>
               </a>
@@ -53,19 +53,19 @@ export default function Header() {
 
         <ul className='flex justify-center items-center gap-[30px] mt-[50px] md:hidden'>
 
-          <a href="#!">
+          <a href="https://www.linkedin.com/in/jasur-xaitov-181164250!">
             <Icon icon="skill-icons:linkedin" color="blue" width="30" />
           </a>
 
-          <a href="#!">
+          <a href="https://github.com/jasurkhaitov">
             <Icon icon="fa:github-square" color="white" width="30" />
           </a>
 
-          <a href="#!">
+          <a href="https://t.me/jasurkhaitov">
             <Icon icon="logos:telegram" color="blue" width="30" />
           </a>
 
-          <a href="#!">
+          <a href="mailto:xaitovjasur0@gmail.com">
             <Icon icon="logos:google-gmail" color="blue" width="30" />
           </a>
 
