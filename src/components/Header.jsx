@@ -2,7 +2,6 @@ import React from 'react'
 import { style } from '../assets/constant/style'
 import pcImg from '../assets/img/PC.png'
 import { Icon } from '@iconify/react';
-// import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Header() {
   return (
@@ -54,19 +53,19 @@ export default function Header() {
         <ul className='flex justify-center items-center gap-[30px] mt-[50px] md:hidden'>
 
           <a href="https://www.linkedin.com/in/jasur-xaitov-181164250!">
-            <Icon icon="skill-icons:linkedin" color="blue" width="30" />
+            <Icon icon="skill-icons:linkedin" color="blue" width="35" />
           </a>
 
           <a href="https://github.com/jasurkhaitov">
-            <Icon icon="fa:github-square" color="white" width="30" />
+            <Icon icon="fa:github-square" color="white" width="35" />
           </a>
 
           <a href="https://t.me/jasurkhaitov">
-            <Icon icon="logos:telegram" color="blue" width="30" />
+            <Icon icon="logos:telegram" color="blue" width="35" />
           </a>
 
           <a href="mailto:xaitovjasur0@gmail.com">
-            <Icon icon="logos:google-gmail" color="blue" width="30" />
+            <Icon icon="logos:google-gmail" color="blue" width="35" />
           </a>
 
         </ul>

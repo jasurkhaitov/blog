@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { menuNav } from "../assets/constant/constant";
 import LogoImg from '../assets/img/logo.png'
 import { style } from "../assets/constant/style";
+import Resume from '../assets/Jasurbek_Xaitov_CV.pdf'
 
 export default function Navbar() {
 
@@ -42,7 +43,7 @@ export default function Navbar() {
             })
           }
 
-          <a href="../assets/Jasurbek_Xaitov_CV.pdf" download={'../assets/Jasurbek_Xaitov_CV.pdf'} className={`${style.button} hidden lg:block`}>
+          <a href={Resume} download='Jasurbek_Xaitov_CV' className={`${style.button} hidden lg:block`}>
             <span className="text-base font-medium text-PblackColor">Download CV</span>
             <i class="fa-solid fa-download text-[18px] ml-[7px]"></i>
           </a>
@@ -61,10 +62,10 @@ export default function Navbar() {
               })
             }
 
-            <button className={`${style.button} mt-[20px]`}>
+            <a href={Resume} download='Jasurbek_Xaitov_CV' className={`${style.button} mt-[20px]`}>
               <span className="text-base font-medium text-PblackColor">Download CV</span>
               <i class="fa-solid fa-download text-[18px] ml-[7px]"></i>
-            </button>
+            </a>
 
           </ul>
         </div>
