@@ -94,3 +94,9 @@
     object-fit: cover;
     height: auto;
   }
+
+  a:hover,
+  button:hover,
+  i:hover {
+    cursor: pointer;
+  }
