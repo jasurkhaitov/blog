@@ -52,7 +52,7 @@ export default function Navbar() {
 
       </div>
 
-      <div className={`${navbar} h-full w-full top-[70px] md:top-[90px] fixed left-0 right-0 m-0 p-0 z-111`}>
+      <div className={`${navbar} h-full w-[full] top-[70px] md:top-[90px] fixed left-0 right-0 m-0 p-0 z-111`}>
         <div className={`${right} absolute h-full w-[320px] top-[0px] bg-[#0a101e] flex flex-col items-center justify-between pt-[30px] pb-[100px] z-0`}>
           <ul className="flex flex-col gap-[20px]">
 
