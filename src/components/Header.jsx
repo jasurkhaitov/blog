@@ -67,7 +67,7 @@ export default function Header() {
           alt=""
         />
 
-        <ul className="flex justify-center items-center gap-[30px] mt-[75px] md:hidden">
+        <ul className="relative z-10 flex justify-center items-center gap-[30px] mt-[75px] md:hidden">
           <a href="https://www.linkedin.com/in/jasur-xaitov-181164250!">
             <Icon icon="skill-icons:linkedin" color="blue" width="35" />
           </a>
