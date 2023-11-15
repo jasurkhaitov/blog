@@ -20,3 +20,30 @@ export const menuNav = [
         clug: 'contact'
     }
 ]
+
+export const linkContact = [
+    {
+        linkUrl: 'https://www.linkedin.com/in/jasurbek-xaitov-1a8484268/',
+        iconType: 'skill-icons:linkedin',
+        iconColor: 'blue',
+        nameContact: 'Linkedln'
+    },
+    {
+        linkUrl: 'https://github.com/jasurkhaitov',
+        iconType: 'fa:github-square',
+        iconColor: 'white',
+        nameContact: 'GitHub'
+    },
+    {
+        linkUrl: 'https://t.me/jasurkhaitov',
+        iconType: 'logos:telegram',
+        iconColor: 'blue',
+        nameContact: 'Telegram'
+    },
+    {
+        linkUrl: 'mailto:xaitovjasur0@gmail.com!',
+        iconType: 'logos:google-gmail',
+        iconColor: 'blue',
+        nameContact: 'Email'
+    },
+]

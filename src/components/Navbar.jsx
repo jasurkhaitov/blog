@@ -18,7 +18,7 @@ export default function Navbar() {
   } 
 
   return (
-    <nav className="bg-[#0a101e] bg-opacity-1 md:bg-opacity-[0.93] m-auto px-[15px] py-[15px] md:py-[20px] md:px-[0px] fixed w-full top-0">
+    <nav className="bg-[#0a101e] bg-opacity-1 z-110 md:bg-opacity-[0.93] m-auto px-[15px] py-[15px] md:py-[20px] md:px-[0px] fixed w-full top-0 z-[20]">
 
       <div className="container m-auto flex items-center justify-between">
 
