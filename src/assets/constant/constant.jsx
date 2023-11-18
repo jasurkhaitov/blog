@@ -47,3 +47,5 @@ export const linkContact = [
         nameContact: 'Email'
     },
 ]
+
+export const skills = ['HTML', 'CSS', 'Figma', 'Bootstrap', 'Material UI', 'jQuery', 'Sass', 'Tailwind Css', 'Gulp', 'JavaScript', 'React', 'React Router', 'Redux', 'Redux Toolkit', 'Git & GitHub', 'Firebase', 'Next.js']

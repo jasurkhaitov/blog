@@ -16,7 +16,7 @@ export default function Header() {
   const [activeUl, setActiveUl] = useState('Linkedln')
 
   return (
-    <header className="pt-[100px] md:pt-[140px] pb-[50px] md:pb-[100px] bg-headerBackground bg-center bg-no-repeat bg-cover md:px-[50px] lg:px-[100px] z-[11]">
+    <header className="pt-[100px] md:pt-[140px] pb-[50px] md:pb-[100px] bg-headerBackground bg-center bg-no-repeat bg-cover md:px-[50px] lg:px-[100px] z-10">
       <div className="container m-auto">
         <div className="px-[20px] md:px-[0px] flex gap-3 md:gap-5" data-aos = 'fade-down'>
           <div className="flex flex-col justify-center items-center mt-5">
@@ -40,7 +40,7 @@ export default function Header() {
                       <div className="w-[25px]">
                         <Icon icon={element.iconType} color={element.iconColor} width={25}/>
                       </div>
-                      <span className={`${style.spanLink}`}>{element.nameContact}</span>
+                      <span className={`${activeUl !== element.nameContact ? 'opacity-[0] transition-all duration-[0.4s] ease-[ease]' : 'transition-all duration-[0.4s] ease-[ease] opacity-[1]'} text-base font-semibold text-white`}>{element.nameContact}</span>
                     </a>
                   )
                 })
