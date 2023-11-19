@@ -25,7 +25,7 @@ export default function Main() {
         <div className='container m-auto'>
 
           <div className='relative w-full' data-aos = 'fade-up'>
-            <p className='text-[#151b2980] text-[45px] sm:text-[80px] lg:text-[90px] xl:text-[100px] font-bold text-center'>OVERVIEW</p>
+            <p className='text-[#151b2980] text-[45px] sm:text-[80px] lg:text-[90px] xl:text-[100px] font-bold text-center uppercase'>OVERVIEW</p>
             <p className='text-[#fec544] text-[20px] sm:text-[25px] lg:text-[30px] font-bold absolute top-[14px] sm:top-[25px] lg:top-[30px] left-1/2 translate-x-[-50%] uppercase pt-0 px-[10px] border-b-2 border-b-[#fec544]'>OVERVIEW</p>
           </div>
 
@@ -34,25 +34,25 @@ export default function Main() {
           </div>
 
           <div className='flex items-center flex-wrap justify-center gap-[30px] sm:gap-[45px] mt-[30px] sm:mt-[50px] p-[15px] sm:px-0 text-center sm:w-[85%] md:w-[90%] xl:w-[80%] m-auto' data-aos = 'fade-up'>
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={HTML} alt=""/>
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={CSS} alt=""/>
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={Figma} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={Less} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={Sass} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={Scss} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={bootstrap} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={materialUi} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={tailwind} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={HTML} alt=""/>
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={CSS} alt=""/>
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={Figma} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={Less} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={Sass} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={Scss} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={bootstrap} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={materialUi} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={tailwind} alt="" />
             <img className='w-[20px] sm:w-[25px] md:w-[30px] lg:w-[40px]' src={gulp} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={js} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={jQuery} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={typescript} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={react} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={router} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={redux} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px] bg-white rounded-full border-none' src={nextjs} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={firebase} alt="" />
-            <img className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[77px]' src={git} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={js} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={jQuery} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={typescript} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={react} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={router} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={redux} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] bg-white rounded-full border-none' src={nextjs} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={firebase} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px]' src={git} alt="" />
           </div>
 
         </div>
