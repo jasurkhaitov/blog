@@ -10,7 +10,7 @@ import { linkContact } from "../assets/constant/constant";
 export default function Header() {
 
   useEffect(() => {
-    Aos.init({duration: 1000});
+    Aos.init({duration: 1500});
   }, [])
 
   const [activeUl, setActiveUl] = useState('Linkedln')

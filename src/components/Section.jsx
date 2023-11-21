@@ -21,14 +21,14 @@ export default function Section() {
                 <p className='text-white text-md sm:text-lg lg:text-xl font-medium'>Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</p>
             </div>
 
-            <div className='grid grid-cols-1 px-[15px] sm:px-0 w-full sm:w-[80%] md:w-full lg:grid-cols-2 gap-[30px] xl:gap-[50px] xl:w-[1000px] m-auto mt-[50px]' data-aos = 'fade-up'>
+            <div className='grid grid-cols-1 px-[15px] sm:px-0 w-full sm:w-[80%] md:w-full xls:w-full lg:grid-cols-2 gap-[30px] xl:gap-[50px] xl:w-[1000px] m-auto mt-[50px]'>
 
-                <div className='bg-[#161031] p-[15px] sm:p-[20px] rounded-2xl grid md:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-5 items-center'>
+                <div className='bg-[#161031] p-[15px] sm:p-[20px] rounded-2xl grid md:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-5 items-center'  data-aos = 'fade-right'>
 
-                    <div className='w-auto md:w-[330px] lg:w-auto h-[180px] sm:h-[270px] md:h-[220px] lg:h-[250px] overflow-y-hidden rounded-2xl' onMouseEnter={() => setHoveredOne(true)} onMouseLeave={() => setHoveredOne(false)}>
-                        <a href="!#" className=''>
+                    <div className='w-auto md:w-[330px] lg:w-auto h-[140px] x310:h-[150px] x350:h-[170px] xs:h-[190px] sm:h-[270px] xls:h-[260px] md:h-[230px] lg:h-[250px] overflow-y-hidden rounded-2xl' onMouseEnter={() => setHoveredOne(true)} onMouseLeave={() => setHoveredOne(false)}>
+                        <div className='hover:cursor-pointer'>
                             <img src={portfolio} className={`${hoveredOne ? 'transition-transform duration-[5s] ease-[ease-in-out] delay-[0s] translate-y-[-65%]' : 'transition-transform duration-[5s] ease-[ease-in-out] delay-[0s] translate-y-[0%]'} w-full rounded-2xl`} alt="" />
-                        </a>
+                        </div>
                     </div>
 
                     <div>
@@ -40,13 +40,13 @@ export default function Section() {
                             <p className='text-[#228be6] text-[17px] font-medium'>#reactjs</p>
                         </div>
 
-                        <div className='mt-[10px] sm:mt-[20px] md:mt-[10px] lg:mt-[20px] flex items-center justify-evenly'>
-                            <a href='#!' className='flex items-center w-[110px] justify-center gap-2'>
+                        <div className='mt-[20px] md:mt-[10px] lg:mt-[30px] flex items-center justify-between xls:justify-evenly'>
+                            <a href='https://www.jasurkhaitov.uz/' className='button-85 flex items-center justify-center gap-2' role="button">
                                 <span className='text-[17px] font-bold text-white'>Live Demo</span>
                                 <Icon icon="fa6-solid:arrow-up-right-from-square" color="white" width="15" />
                             </a>
 
-                            <a href='!#' className='flex items-center w-[110px] justify-center gap-2'>
+                            <a href='https://github.com/jasurkhaitov/Portfolio' className='button-85 flex items-center justify-center gap-2' role="button">
                                 <span className='text-[17px] font-bold text-white'>Code</span>
                                 <Icon icon="foundation:social-github" color="white" width="20" />
                             </a>
@@ -55,11 +55,11 @@ export default function Section() {
 
                 </div>  
 
-                <div className='bg-[#161031] p-[15px] sm:p-[20px] rounded-2xl grid md:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-5 items-center'>
+                <div className='bg-[#161031] p-[15px] sm:p-[20px] rounded-2xl grid md:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-5 items-center'  data-aos = 'fade-left'>
 
-                    <div className='w-auto md:w-[330px] lg:w-auto h-[180px] sm:h-[270px] md:h-[220px] lg:h-[250px] overflow-y-hidden rounded-2xl' onMouseEnter={() => setHoveredTwo(true)} onMouseLeave={() => setHoveredTwo(false)}>
-                        <a href="!#" className=''>
-                            <img src={travlog} className={`${hoveredTwo ? 'transition-transform duration-[5s] ease-[ease-in-out] delay-[0s] translate-y-[-65%]' : 'transition-transform duration-[5s] ease-[ease-in-out] delay-[0s] translate-y-[0%]'} w-full rounded-2xl`} alt="" />
+                    <div className='w-auto md:w-[330px] lg:w-auto h-[140px] x310:h-[150px] xs:h-[190px] sm:h-[270px] xls:h-[260px] md:h-[240px] lg:h-[250px] x350:h-[170px] overflow-y-hidden rounded-2xl' onMouseEnter={() => setHoveredTwo(true)} onMouseLeave={() => setHoveredTwo(false)}>
+                        <a href="https://travlog-eosin.vercel.app/" className=''>
+                            <img src={travlog} className={`${hoveredTwo ? 'transition-transform duration-[5s] ease-[ease-in-out] delay-[0s] translate-y-[-81%]' : 'transition-transform duration-[5s] ease-[ease-in-out] delay-[0s] translate-y-[0%]'} w-full rounded-2xl`} alt="" />
                         </a>
                     </div>
 
@@ -72,13 +72,13 @@ export default function Section() {
                             <p className='text-[#228be6] text-[17px] font-medium'>#reactjs</p>
                         </div>
 
-                        <div className='mt-[10px] sm:mt-[20px] md:mt-[10px] lg:mt-[20px] flex items-center justify-evenly'>
-                            <a href='#!' className='flex items-center w-[110px] justify-center gap-2'>
+                        <div className='mt-[20px] md:mt-[10px] lg:mt-[30px] flex items-center justify-between xls:justify-evenly'>
+                            <a href='https://travlog-eosin.vercel.app/' className='button-85 flex items-center justify-center gap-2' role="button">
                                 <span className='text-[17px] font-bold text-white'>Live Demo</span>
                                 <Icon icon="fa6-solid:arrow-up-right-from-square" color="white" width="15" />
                             </a>
 
-                            <a href='!#' className='flex items-center w-[110px] justify-center gap-2'>
+                            <a href='https://github.com/jasurkhaitov/Travlog' className='button-85 flex items-center justify-center gap-2' role="button">
                                 <span className='text-[17px] font-bold text-white'>Code</span>
                                 <Icon icon="foundation:social-github" color="white" width="20" />
                             </a>

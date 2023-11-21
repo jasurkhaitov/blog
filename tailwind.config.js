@@ -2,8 +2,29 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
-    container: {
-      
+    screens: {
+      'x310': '310px',
+
+      'x350': '350px',
+
+      'xs': '400px',
+
+      'x450': '450px',
+
+      'xls': '500px',
+
+      'sm': '640px',
+
+      'md': '768px',
+
+      'lg': '1024px',
+
+      'xl': '1280px',
+
+      '2xl': '1536px',
+    },
+
+    container: { 
       padding: {
         sm: '15px',
         lg: '30px'
