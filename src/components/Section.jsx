@@ -21,9 +21,9 @@ export default function Section() {
                 <p className='text-white text-md sm:text-lg lg:text-xl font-medium'>Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</p>
             </div>
 
-            <div className='grid grid-cols-1 px-[15px] sm:px-0 w-full sm:w-[80%] md:w-full xls:w-full lg:grid-cols-2 gap-[30px] xl:gap-[50px] xl:w-[1000px] m-auto mt-[50px]'>
+            <div className='grid grid-cols-1 px-[15px] sm:px-0 w-full sm:w-[80%] md:w-full xls:w-full lg:grid-cols-2 gap-[30px] lg:w-[90%] xl:gap-[50px] xl:w-[1000px] m-auto mt-[50px]'>
 
-                <div className='bg-[#161031] p-[15px] sm:p-[20px] rounded-2xl grid md:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-5 items-center'  data-aos = 'fade-right'>
+                <div className='bg-[#161031] p-[15px] sm:p-[20px] rounded-2xl grid md:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-5 items-center' data-aos = 'fade-up'>
 
                     <div className='w-auto md:w-[330px] lg:w-auto h-[140px] x310:h-[150px] x350:h-[170px] xs:h-[190px] sm:h-[270px] xls:h-[260px] md:h-[230px] lg:h-[250px] overflow-y-hidden rounded-2xl' onMouseEnter={() => setHoveredOne(true)} onMouseLeave={() => setHoveredOne(false)}>
                         <div className='hover:cursor-pointer'>
@@ -55,7 +55,7 @@ export default function Section() {
 
                 </div>  
 
-                <div className='bg-[#161031] p-[15px] sm:p-[20px] rounded-2xl grid md:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-5 items-center'  data-aos = 'fade-left'>
+                <div className='bg-[#161031] p-[15px] sm:p-[20px] rounded-2xl grid md:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-5 items-center' data-aos = 'fade-up'>
 
                     <div className='w-auto md:w-[330px] lg:w-auto h-[140px] x310:h-[150px] xs:h-[190px] sm:h-[270px] xls:h-[260px] md:h-[240px] lg:h-[250px] x350:h-[170px] overflow-y-hidden rounded-2xl' onMouseEnter={() => setHoveredTwo(true)} onMouseLeave={() => setHoveredTwo(false)}>
                         <a href="https://travlog-eosin.vercel.app/" className=''>

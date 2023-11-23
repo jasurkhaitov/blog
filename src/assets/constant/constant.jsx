@@ -48,4 +48,19 @@ export const linkContact = [
     },
 ]
 
+export const linkEdu = [
+    {
+        linkUrl: 'https://www.linkedin.com/in/jasurbek-xaitov-1a8484268/',
+        iconType: 'skill-icons:linkedin',
+        iconColor: 'blue',
+        nameContact: 'Linkedln'
+    },
+    {
+        linkUrl: 'https://github.com/jasurkhaitov',
+        iconType: 'fa:github-square',
+        iconColor: 'white',
+        nameContact: 'GitHub'
+    }
+]
+
 export const skills = ['HTML', 'CSS', 'Figma', 'Bootstrap', 'Material UI', 'jQuery', 'Sass', 'Tailwind Css', 'Gulp', 'JavaScript', 'React', 'React Router', 'Redux', 'Redux Toolkit', 'Git & GitHub', 'Firebase', 'Next.js']
