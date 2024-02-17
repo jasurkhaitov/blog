@@ -1,24 +1,24 @@
 export const menuNav = [
     {
         linkName: 'Home',
-        clug: 'home'
+        slug: 'Home'
     },
     {
         linkName: 'About Me',
-        clug: 'about'
+        slug: 'About'
     },
     {
-        linkName: 'Skills',
-        clug: 'skill'
+        linkName: 'Overview',
+        slug: 'Overview'
     },
     {
         linkName: 'Projects',
-        clug: 'project'
+        slug: 'Projects'
     },
     {
         linkName: 'Contact',
-        clug: 'contact'
-    }
+        slug: 'Contact'
+    },
 ]
 
 export const linkContact = [

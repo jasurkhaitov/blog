@@ -41,6 +41,7 @@ module.exports = {
         Pyellow: '#fec544',
         PblackColor: '#070d1b',
         FmodalBackgroundColor : 'rgba(0, 0, 0, 0.6)',
+        secondary: '#aaa6c3'
       },
 
       backgroundImage : {

@@ -12,7 +12,7 @@ export default function Resume() {
     const [three, setThree] = useState(false)
 
   return (
-    <div className='pb-[50px] sm:pb-[80px] md:pb-[100px] bg-[#0a101e]'>
+    <div className="About pt-[30px] sm:pt-[40px] md:pt-[70px] pb-[50px] bg-[#0a101e]">
         <div className='container m-auto'>
 
             <div className='relative w-full' data-aos = 'fade-up'>
@@ -24,7 +24,7 @@ export default function Resume() {
 
                 <div className='flex flex-col gap-[25px]' data-aos = 'fade-up'>
                     <div className='flex items-center gap-[15px] xls:gap-[20px] lg:gap-[30px]'>
-                        <Icon icon="mdi:education-outline" className={`${hoverEdu ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'}`} width="60" />
+                        <Icon icon="mdi:education-outline" className={`${hoverEdu ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'}`} width="50" />
                         <h3 className='text-[#fdfeff] text-[33px] lg:text-[36px] font-medium'>Education</h3>
                     </div>
 
@@ -38,8 +38,8 @@ export default function Resume() {
                         <div className='py-[10px]'>
                             <div className='mb-[30px]'>
                                 <h4 className='text-[#fec544] text-[20px] xs:text-[22px] xls:text-[24px] font-medium'>Bachelor of Software Engineering</h4>
-                                <p className='text-[#a9adb8] text-[16px] xls:text-[18px] font-medium mb-[10px]'>2022 - 2026</p>
-                                <p className='text-[18px] xls:text-[20px] font-medium text-[#fdfeff]'>INHA university at Tashkent</p>
+                                <p className='text-[#a9adb8] text-[16px] xls:text-[18px] font-medium mb-[10px]'><i class="fa-solid fa-calendar-days mr-[5px]"></i> 2022 - 2026</p>
+                                <p className='text-[18px] xls:text-[20px] font-medium text-[#fdfeff]'><a href="https://inha.uz" target='_blank' className='cursor-pointer'>INHA</a> university at Tashkent</p>
                             </div>
 
                             <div className='mb-[30px]'>
@@ -53,7 +53,7 @@ export default function Resume() {
 
                 <div className='flex flex-col gap-[25px]' data-aos = 'fade-up'>
                     <div className='flex items-center gap-[20px] lg:gap-[30px]'>
-                        <Icon icon="fluent-mdl2:contact-link" className={`${hoverContact ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200`} width="50"  />
+                        <Icon icon="fluent-mdl2:contact-link" className={`${hoverContact ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200`} width="40"  />
                         <h3 className='text-[#fdfeff] text-[33px] lg:text-[36px] font-medium'>Contact</h3>
                     </div>
 
@@ -66,43 +66,43 @@ export default function Resume() {
 
                         <div className='py-[10px] flex flex-col gap-[15px]'>
                            <div className='flex items-center gap-[30px]' onMouseEnter={() => setOne(!one)} onMouseLeave={() => setOne(!one)}>
-                                <a href="mailto:xaitovjasur0@gmail.com!">
+                                <a target='_blank' href="mailto:xaitovjasur0@gmail.com!">
                                     <Icon icon="clarity:email-solid" className={`${one ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200`} width="35" />
                                 </a>
 
-                                <a href="mailto:xaitovjasur0@gmail.com!" className={`${one ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium hidden xs:block`}>
+                                <a target='_blank' href="mailto:xaitovjasur0@gmail.com!" className={`${one ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium hidden xs:block`}>
                                     xaitovjasur0@gmail.com
                                 </a>
 
-                                <a href="mailto:xaitovjasur0@gmail.com!" className={`${one ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium block xs:hidden`}>
+                                <a target='_blank' href="mailto:xaitovjasur0@gmail.com!" className={`${one ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium block xs:hidden`}>
                                     Email
                                 </a>
                            </div>
 
                            <div className='flex items-center gap-[30px]' onMouseEnter={() => setTwo(!two)} onMouseLeave={() => setTwo(!two)}>
-                                <a href="tel:+998880751610">
+                                <a target='_blank' href="tel:+998880751610">
                                     <i className={`${two ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 fa-solid fa-phone fa-shake text-[30px]`}></i>
                                 </a>
 
-                                <a href="tel:+998880751610" className={`${two ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium hidden xs:block`}>
+                                <a target='_blank' href="tel:+998880751610" className={`${two ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium hidden xs:block`}>
                                     +998 88 075 16 10
                                 </a>
 
-                                <a href="tel:+998880751610" className={`${two ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium block xs:hidden`}>
+                                <a target='_blank' href="tel:+998880751610" className={`${two ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium block xs:hidden`}>
                                     Call
                                 </a>
                            </div>
 
                            <div className='flex items-center gap-[30px]' onMouseEnter={() => setThree(!three)} onMouseLeave={() => setThree(!three)}>
-                                <a href="https://www.google.com/maps/place/Labzak/@41.3314824,69.2648064,19z/data=!4m6!3m5!1s0x38ae8bce910fcbcf:0x170b3f3285c6d142!8m2!3d41.3314824!4d69.2657673!16s%2Fg%2F11pz0kl61v?entry=ttu">
+                                <a target='_blank' href="https://www.google.com/maps/place/Labzak/@41.3314824,69.2648064,19z/data=!4m6!3m5!1s0x38ae8bce910fcbcf:0x170b3f3285c6d142!8m2!3d41.3314824!4d69.2657673!16s%2Fg%2F11pz0kl61v?entry=ttu">
                                     <Icon icon="ion:location-sharp" className={`${three ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200`} width="35" />
                                 </a>
 
-                                <a href="https://www.google.com/maps/place/Labzak/@41.3314824,69.2648064,19z/data=!4m6!3m5!1s0x38ae8bce910fcbcf:0x170b3f3285c6d142!8m2!3d41.3314824!4d69.2657673!16s%2Fg%2F11pz0kl61v?entry=ttu" className={`${three ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium hidden xs:block`}>
+                                <a target='_blank' href="https://www.google.com/maps/place/Labzak/@41.3314824,69.2648064,19z/data=!4m6!3m5!1s0x38ae8bce910fcbcf:0x170b3f3285c6d142!8m2!3d41.3314824!4d69.2657673!16s%2Fg%2F11pz0kl61v?entry=ttu" className={`${three ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium hidden xs:block`}>
                                     Tashkent Region, Shayxontohur district
                                 </a>
 
-                                <a href="https://www.google.com/maps/place/Labzak/@41.3314824,69.2648064,19z/data=!4m6!3m5!1s0x38ae8bce910fcbcf:0x170b3f3285c6d142!8m2!3d41.3314824!4d69.2657673!16s%2Fg%2F11pz0kl61v?entry=ttu" className={`${three ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium block xs:hidden`}>
+                                <a target='_blank' href="https://www.google.com/maps/place/Labzak/@41.3314824,69.2648064,19z/data=!4m6!3m5!1s0x38ae8bce910fcbcf:0x170b3f3285c6d142!8m2!3d41.3314824!4d69.2657673!16s%2Fg%2F11pz0kl61v?entry=ttu" className={`${three ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium block xs:hidden`}>
                                     Location
                                 </a>
                            </div>
@@ -115,7 +115,7 @@ export default function Resume() {
                                     {
                                         linkEdu.map((element, value) => {
                                             return (
-                                                <a href={element.linkUrl} value={element.value} className={`px-[15px] rounded-[10px] py-[7px] bg-[#070d1b] border-[0.5px] border-[#3f4551] flex items-center justify-start gap-[13px] hover:cursor-pointer`}>
+                                                <a target='_blank' href={element.linkUrl} value={element.value} className={`px-[15px] rounded-[10px] py-[7px] bg-[#070d1b] border-[0.5px] border-[#3f4551] flex items-center justify-start gap-[13px] hover:cursor-pointer`}>
                                                     <div className="w-[25px]">
                                                         <Icon icon={element.iconType} color={element.iconColor} width={25}/>
                                                     </div>
