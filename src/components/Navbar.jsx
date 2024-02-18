@@ -13,7 +13,7 @@ export default function Navbar() {
   const [background, setBackground] = useState('delay-200 duration-150')
 
   const handleChangeBras = () => {
-    if(barsClass == 'hidden') {
+    if(barsClass === 'hidden') {
       document.body.style.overflow = ''
       setBarsClass('block')
     } else {
@@ -21,8 +21,7 @@ export default function Navbar() {
       setBarsClass('hidden')
     }
 
-    
-    closeClass == 'hidden' ? setCloseClass('block') : setCloseClass('hidden')
+    closeClass === 'hidden' ? setCloseClass('block') : setCloseClass('hidden')
 
     navbar === 'delay-200 duration-150' ? setNavbar('bg-FmodalBackgroundColor delay-250 duration-150') : setNavbar('delay-200 duration-150')
     right === 'right-[-500px] delay-200 duration-150' ? setRight('right-0 delay-200 duration-150') : setRight('right-[-500px] delay-200 duration-150')
@@ -35,7 +34,7 @@ export default function Navbar() {
   }
 
   const handleNavbar = (event) => {
-    if(event.target.id == 'resNavbar') {
+    if(event.target.id === 'resNavbar') {
       setRight('right-[-500px] delay-200 duration-150')
       setBackground('delay-200 duration-150')
       setBarsClass('block')

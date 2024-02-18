@@ -35,7 +35,7 @@ export default function Section() {
                         <h2 className='text-[24px] sm:text-[28px] font-[600] sm:font-bold text-white'>Portfolio</h2>
                         <p className='mt-1 lg:mt-2 text-[#aaa6c3] font-[600] text-[14px] sm:text-[16px]'>This is a my portfolio project with responsive design where you can see all my skills, projects andcontact information. Design taked from figma community.</p>
 
-                        <div className='x310:flex items-center gap-[10px] mt-[10px]'>
+                        <div className='x350:flex items-center gap-[10px] mt-[10px]'>
                             <p className='text-[#fd7e14] text-[17px] font-medium'>#tailwindcss</p>
                             <p className='text-green-500 text-[17px] font-medium'>#javascript</p>
                             <p className='text-[#228be6] text-[17px] font-medium'>#reactjs</p>
@@ -68,7 +68,7 @@ export default function Section() {
                         <h2 className='text-[24px] sm:text-[28px] font-[600] sm:font-bold text-white'>Travlog</h2>
                         <p className='mt-1 lg:mt-2 text-[#aaa6c3] font-[600] text-[14px] sm:text-[16px]'>Landing page website for travel agency that offers whole range of tour services.With magnificient images and user-friendly design with responsiveness.</p>
 
-                        <div className='x310:flex items-center gap-[10px] mt-[10px]'>
+                        <div className='x350:flex items-center gap-[10px] mt-[10px]'>
                             <p className='text-[#fd7e14] text-[17px] font-medium'>#materialui</p>
                             <p className='text-green-500 text-[17px] font-medium'>#javascript</p>
                             <p className='text-[#228be6] text-[17px] font-medium'>#reactjs</p>
