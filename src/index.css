@@ -138,6 +138,12 @@ i.fa-angles-up {
   }
 }
 
+.scroller {
+  width: 11px;
+  background: linear-gradient(blue, crimson);
+  border-radius: 10px;
+}
+
 ::-webkit-scrollbar {
   width: 11px;
 }

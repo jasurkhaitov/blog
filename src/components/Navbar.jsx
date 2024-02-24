@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, {useEffect, useState } from "react";
 import { menuNav } from "../assets/constant/constant";
 import LogoImg from '../assets/img/logo.png'
 import { style } from "../assets/constant/style";
@@ -33,16 +33,26 @@ export default function Navbar() {
     }
   }
 
+  function closeNavbarFunction() {
+    setRight('right-[-500px] delay-200 duration-150')
+    setBackground('delay-200 duration-150')
+    setBarsClass('block')
+    setCloseClass('hidden')
+    setNavbar('delay-200 duration-150')
+    document.body.style.overflow = ''
+  }
+
   const handleNavbar = (event) => {
     if(event.target.id === 'resNavbar') {
-      setRight('right-[-500px] delay-200 duration-150')
-      setBackground('delay-200 duration-150')
-      setBarsClass('block')
-      setCloseClass('hidden')
-      setNavbar('delay-200 duration-150')
-      document.body.style.overflow = ''
+      closeNavbarFunction()
     }
   }
+
+  document.addEventListener('keydown', (event) => {
+    if(event.code == 'Escape') {
+      closeNavbarFunction()
+    }
+  })
 
   const handleClickMenu = (element) => {
     document.querySelector(`.${element.slug}`)?.scrollIntoView({ behavior: 'smooth' })
