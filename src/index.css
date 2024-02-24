@@ -158,10 +158,3 @@ i.fa-angles-up {
     border-radius: 10px;
   }
 }
-
-html {
-  overflow-y: scroll;
-  scrollbar-color: linear-gradient(blue, crimson) rgb(11, 11, 65);
-  scrollbar-width: 11px;
-  border-radius: 10px;
-}

@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from "react";
+import React, { useState } from "react";
 import { menuNav } from "../assets/constant/constant";
 import LogoImg from '../assets/img/logo.png'
 import { style } from "../assets/constant/style";
@@ -14,11 +14,11 @@ export default function Navbar() {
 
   const handleChangeBras = () => {
     if(barsClass === 'hidden') {
-      document.body.style.overflow = ''
       setBarsClass('block')
+      document.body.style.overflow = ''
     } else {
-      document.body.style.overflow = 'hidden'
       setBarsClass('hidden')
+      document.body.style.overflow = 'hidden'
     }
 
     closeClass === 'hidden' ? setCloseClass('block') : setCloseClass('hidden')
@@ -38,9 +38,10 @@ export default function Navbar() {
     setBackground('delay-200 duration-150')
     setBarsClass('block')
     setCloseClass('hidden')
-    setNavbar('delay-200 duration-150')
     document.body.style.overflow = ''
+    setNavbar('delay-200 duration-150')
   }
+
 
   const handleNavbar = (event) => {
     if(event.target.id === 'resNavbar') {
