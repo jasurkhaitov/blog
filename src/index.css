@@ -159,7 +159,8 @@ i.fa-angles-up {
   }
 }
 
-html {
+html, 
+body {
   overflow-y: scroll;
   scrollbar-color: linear-gradient(blue, crimson) rgb(11, 11, 65);
   scrollbar-width: 11px;
