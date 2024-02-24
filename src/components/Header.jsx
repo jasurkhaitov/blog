@@ -36,7 +36,7 @@ export default function Header() {
               {
                 linkContact.map((element, value) => {
                   return (
-                    <a href={element.linkUrl} target="_blank" value={element.value} className={`${activeUl !== element.nameContact ? 'max-w-[55px] !overflow-hidden px-[15px] transition-all duration-[0.4s] ease-[ease]' : 'px-[15px] transition-all duration-[0.4s] ease-[ease] !overflow-visible max-w-[140px]'} rounded-[50px] transition-all duration-[0.4s] ease-[ease] py-[10px] bg-[#070d1b] border-[0.5px] border-[#3f4551] flex items-center justify-start gap-[13px] hover:cursor-pointer`} onMouseEnter={() => setActiveUl(element.nameContact)}>
+                    <a href={element.linkUrl} aria-label={element.nameContact} target="_blank" value={element.value} className={`${activeUl !== element.nameContact ? 'max-w-[55px] !overflow-hidden px-[15px] transition-all duration-[0.4s] ease-[ease]' : 'px-[15px] transition-all duration-[0.4s] ease-[ease] !overflow-visible max-w-[140px]'} rounded-[50px] transition-all duration-[0.4s] ease-[ease] py-[10px] bg-[#070d1b] border-[0.5px] border-[#3f4551] flex items-center justify-start gap-[13px] hover:cursor-pointer`} onMouseEnter={() => setActiveUl(element.nameContact)}>
                       <div className="w-[25px]">
                         <Icon icon={element.iconType} color={element.iconColor} width={25}/>
                       </div>
@@ -53,19 +53,19 @@ export default function Header() {
         <img src={pcImg} className="px-[5px] md:px-[0px] m-auto w-full mt-[40px] md:mt-[75px] xl:w-4/5 2xl:w-3/4" alt="" data-aos = 'fade-up' />
 
         <ul className="relative z-1 flex justify-center items-center gap-[30px] mt-[75px] md:hidden">
-          <a target="_blank" href="https://www.linkedin.com/in/jasurbek-xaitov-1a8484268/">
+          <a aria-label='linkedin' target="_blank" href="https://www.linkedin.com/in/jasurbek-xaitov-1a8484268/">
             <Icon icon="skill-icons:linkedin" color="blue" width="35" />
           </a>
 
-          <a target="_blank" href="https://github.com/jasurkhaitov">
+          <a aria-label='git hub' target="_blank" href="https://github.com/jasurkhaitov">
             <Icon icon="fa:github-square" color="white" width="35" />
           </a>
 
-          <a target="_blank" href="https://t.me/jasurkhaitov">
+          <a aria-label='telegram' target="_blank" href="https://t.me/jasurkhaitov">
             <Icon icon="logos:telegram" color="blue" width="35" />
           </a>
 
-          <a target="_blank" href="mailto:xaitovjasur0@gmail.com">
+          <a aria-label='email' target="_blank" href="mailto:xaitovjasur0@gmail.com">
             <Icon icon="logos:google-gmail" color="blue" width="35" />
           </a>
         </ul>

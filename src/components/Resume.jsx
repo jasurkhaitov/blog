@@ -66,43 +66,43 @@ export default function Resume() {
 
                         <div className='py-[10px] flex flex-col gap-[15px]'>
                            <div className='flex items-center gap-[30px]' onMouseEnter={() => setOne(!one)} onMouseLeave={() => setOne(!one)}>
-                                <a target='_blank' href="mailto:xaitovjasur0@gmail.com!">
+                                <a aria-label='email' target='_blank' href="mailto:xaitovjasur0@gmail.com!">
                                     <Icon icon="clarity:email-solid" className={`${one ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200`} width="35" />
                                 </a>
 
-                                <a target='_blank' href="mailto:xaitovjasur0@gmail.com!" className={`${one ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium hidden xs:block`}>
+                                <a aria-label='email' target='_blank' href="mailto:xaitovjasur0@gmail.com!" className={`${one ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium hidden xs:block`}>
                                     xaitovjasur0@gmail.com
                                 </a>
 
-                                <a target='_blank' href="mailto:xaitovjasur0@gmail.com!" className={`${one ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium block xs:hidden`}>
+                                <a target='_blank' aria-label='email' href="mailto:xaitovjasur0@gmail.com!" className={`${one ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium block xs:hidden`}>
                                     Email
                                 </a>
                            </div>
 
                            <div className='flex items-center gap-[30px]' onMouseEnter={() => setTwo(!two)} onMouseLeave={() => setTwo(!two)}>
-                                <a target='_blank' href="tel:+998880751610">
+                                <a aria-label='tel number' target='_blank' href="tel:+998880751610">
                                     <i className={`${two ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 fa-solid fa-phone fa-shake text-[30px]`}></i>
                                 </a>
 
-                                <a target='_blank' href="tel:+998880751610" className={`${two ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium hidden xs:block`}>
+                                <a aria-label='tel number' target='_blank' href="tel:+998880751610" className={`${two ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium hidden xs:block`}>
                                     +998 88 075 16 10
                                 </a>
 
-                                <a target='_blank' href="tel:+998880751610" className={`${two ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium block xs:hidden`}>
+                                <a aria-label='tel number' target='_blank' href="tel:+998880751610" className={`${two ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium block xs:hidden`}>
                                     Call
                                 </a>
                            </div>
 
                            <div className='flex items-center gap-[30px]' onMouseEnter={() => setThree(!three)} onMouseLeave={() => setThree(!three)}>
-                                <a target='_blank' href="https://www.google.com/maps/place/Labzak/@41.3314824,69.2648064,19z/data=!4m6!3m5!1s0x38ae8bce910fcbcf:0x170b3f3285c6d142!8m2!3d41.3314824!4d69.2657673!16s%2Fg%2F11pz0kl61v?entry=ttu">
+                                <a aria-label='location' target='_blank' href="https://www.google.com/maps/place/Labzak/@41.3314824,69.2648064,19z/data=!4m6!3m5!1s0x38ae8bce910fcbcf:0x170b3f3285c6d142!8m2!3d41.3314824!4d69.2657673!16s%2Fg%2F11pz0kl61v?entry=ttu">
                                     <Icon icon="ion:location-sharp" className={`${three ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200`} width="35" />
                                 </a>
 
-                                <a target='_blank' href="https://www.google.com/maps/place/Labzak/@41.3314824,69.2648064,19z/data=!4m6!3m5!1s0x38ae8bce910fcbcf:0x170b3f3285c6d142!8m2!3d41.3314824!4d69.2657673!16s%2Fg%2F11pz0kl61v?entry=ttu" className={`${three ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium hidden xs:block`}>
+                                <a aria-label='location' target='_blank' href="https://www.google.com/maps/place/Labzak/@41.3314824,69.2648064,19z/data=!4m6!3m5!1s0x38ae8bce910fcbcf:0x170b3f3285c6d142!8m2!3d41.3314824!4d69.2657673!16s%2Fg%2F11pz0kl61v?entry=ttu" className={`${three ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium hidden xs:block`}>
                                     Tashkent Region, Shayxontohur district
                                 </a>
 
-                                <a target='_blank' href="https://www.google.com/maps/place/Labzak/@41.3314824,69.2648064,19z/data=!4m6!3m5!1s0x38ae8bce910fcbcf:0x170b3f3285c6d142!8m2!3d41.3314824!4d69.2657673!16s%2Fg%2F11pz0kl61v?entry=ttu" className={`${three ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium block xs:hidden`}>
+                                <a aria-label='location' target='_blank' href="https://www.google.com/maps/place/Labzak/@41.3314824,69.2648064,19z/data=!4m6!3m5!1s0x38ae8bce910fcbcf:0x170b3f3285c6d142!8m2!3d41.3314824!4d69.2657673!16s%2Fg%2F11pz0kl61v?entry=ttu" className={`${three ? 'text-[#fec544] duration-200' : 'text-[#a9adb8] duration-200'} duration-200 text-[19px] font-medium block xs:hidden`}>
                                     Location
                                 </a>
                            </div>
@@ -115,7 +115,7 @@ export default function Resume() {
                                     {
                                         linkEdu.map((element, value) => {
                                             return (
-                                                <a target='_blank' href={element.linkUrl} value={element.value} className={`px-[15px] rounded-[10px] py-[7px] bg-[#070d1b] border-[0.5px] border-[#3f4551] flex items-center justify-start gap-[13px] hover:cursor-pointer`}>
+                                                <a aria-label={element.nameContact} target='_blank' href={element.linkUrl} value={element.value} className={`px-[15px] rounded-[10px] py-[7px] bg-[#070d1b] border-[0.5px] border-[#3f4551] flex items-center justify-start gap-[13px] hover:cursor-pointer`}>
                                                     <div className="w-[25px]">
                                                         <Icon icon={element.iconType} color={element.iconColor} width={25}/>
                                                     </div>

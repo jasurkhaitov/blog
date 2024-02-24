@@ -59,7 +59,7 @@ export default function Section() {
                 <div className='bg-[#161031] p-[15px] sm:p-[20px] rounded-2xl grid md:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-5 items-center' data-aos = 'fade-up'>
 
                     <div className='w-auto md:w-[330px] lg:w-auto h-[140px] x310:h-[150px] xs:h-[190px] sm:h-[270px] xls:h-[260px] md:h-[240px] lg:h-[250px] x350:h-[170px] overflow-y-hidden rounded-2xl' onMouseEnter={() => setHoveredTwo(true)} onMouseLeave={() => setHoveredTwo(false)}>
-                        <a target='_blank' href="https://travlog-eosin.vercel.app" className=''>
+                        <a target='_blank' aria-label='travlog image' href="https://travlog-eosin.vercel.app" className=''>
                             <img src={travlog} className={`${hoveredTwo ? 'transition-transform duration-[5s] ease-[ease-in-out] delay-[0s] translate-y-[-81%]' : 'transition-transform duration-[5s] ease-[ease-in-out] delay-[0s] translate-y-[0%]'} w-full rounded-2xl`} alt="" />
                         </a>
                     </div>
