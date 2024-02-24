@@ -3,7 +3,7 @@ import circle from '../assets/img/circle.png'
 
 export default function Footer() {
   return (
-    <footer className='Contact pt-[30px] sm:pt-[40px] md:pt-[70px] pb-[70px] sm:pb-[80px] md:pb-[100px] bg-[#0a101e]'>
+    <footer className='Contact pt-[30px] sm:pt-[40px] md:pt-[70px] pb-[50px] sm:pb-[100px] md:pb-[100px] bg-[#0a101e]'>
         <div className="container m-auto">
             
             <div className='relative w-full' data-aos = 'fade-up'>
