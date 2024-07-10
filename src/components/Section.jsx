@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Icon } from '@iconify/react';
-import portfolio from '../assets/projectimg/portfolio.png'
-import travlog from '../assets/projectimg/travlog.png'
+// import { Icon } from '@iconify/react';
+// import portfolio from '../assets/projectimg/portfolio.png'
+// import travlog from '../assets/projectimg/travlog.png'
 
 export default function Section() {
 
@@ -13,15 +13,15 @@ export default function Section() {
         <div className="container m-auto">
 
             <div className='relative w-full' data-aos = 'fade-up'>
-                <p className='text-[#151b2980] text-[45px] sm:text-[80px] lg:text-[90px] xl:text-[100px] font-bold text-center uppercase'>Project</p>
-                <p className='text-[#fec544] text-[20px] sm:text-[25px] lg:text-[30px] font-bold absolute top-[14px] sm:top-[25px] lg:top-[30px] left-1/2 translate-x-[-50%] pt-0 px-[10px] border-b-2 border-b-[#fec544] uppercase'>Project</p>
+                <p className='text-[#151b2980] text-[45px] sm:text-[80px] lg:text-[90px] xl:text-[100px] font-bold text-center uppercase'>Projects</p>
+                <p className='text-[#fec544] text-[20px] sm:text-[25px] lg:text-[30px] font-bold absolute top-[14px] sm:top-[25px] lg:top-[30px] left-1/2 translate-x-[-50%] pt-0 px-[10px] border-b-2 border-b-[#fec544] uppercase'>Projects</p>
             </div>
 
-            <div className='p-[15px] sm:px-0 sm:w-[90%] xl:w-[80%] 2xl:w-[70%] m-auto text-center' data-aos = 'fade-up'>
+            {/* <div className='p-[15px] sm:px-0 sm:w-[90%] xl:w-[80%] 2xl:w-[70%] m-auto text-center' data-aos = 'fade-up'>
                 <p className='text-white text-md sm:text-lg lg:text-xl font-medium'>Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</p>
-            </div>
+            </div> */}
 
-            <div className='grid grid-cols-1 px-[15px] sm:px-0 w-full sm:w-[80%] md:w-full xls:w-full lg:grid-cols-2 gap-[30px] lg:w-[90%] xl:gap-[50px] xl:w-[1000px] m-auto mt-[50px]'>
+            {/* <div className='grid grid-cols-1 px-[15px] sm:px-0 w-full sm:w-[80%] md:w-full xls:w-full lg:grid-cols-2 gap-[30px] lg:w-[90%] xl:gap-[50px] xl:w-[1000px] m-auto mt-[50px]'>
 
                 <div className='bg-[#161031] p-[15px] sm:p-[20px] rounded-2xl grid md:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-5 items-center' data-aos = 'fade-up'>
 
@@ -89,7 +89,9 @@ export default function Section() {
 
                 </div>  
 
-            </div>
+            </div> */}
+
+            <p className='text-white text-lg lg:text-2xl font-medium text-center py-[100px]' data-aos = 'fade-up'>New projects coming soon... 🤠</p>
 
         </div>
     </div>

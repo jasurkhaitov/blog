@@ -44,7 +44,7 @@ export default function Resume() {
 
                             <div className='mb-[30px]'>
                                 <h4 className='text-[#fec544] text-[20px] xs:text-[22px] xls:text-[24px] font-medium mb-[20px] capitalize'>Language</h4>
-                                <p className='text-[#a9adb8] text-[18px] font-medium'>Uzbek</p>
+                                <p className='text-[#a9adb8] text-[18px] font-medium'>Uzbek Native</p>
                                 <p className='text-[#a9adb8] text-[18px] font-medium'>English (B2)</p>
                             </div>
                         </div>

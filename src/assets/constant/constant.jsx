@@ -1,3 +1,25 @@
+import HTML from "../imgSkills/html.webp"
+import CSS from "../imgSkills/css.webp"
+import Figma from "../imgSkills/figma.webp"
+import Sass from "../imgSkills/sass.webp"
+import Scss from "../imgSkills/scss.webp"
+import bootstrap from "../imgSkills/bootstrap.webp"
+import materialUi from "../imgSkills/materialUi.webp"
+import tailwind from "../imgSkills/tailwind.webp"
+import js from "../imgSkills/js.webp"
+import jQuery from "../imgSkills/jQuery.webp"
+import typescript from "../imgSkills/typescript.webp"
+import react from "../imgSkills/react.webp"
+import router from "../imgSkills/react-router.webp"
+import redux from "../imgSkills/redux.webp"
+import nextjs from "../imgSkills/nextjs.webp"
+import firebase from "../imgSkills/firebase.webp"
+import gulp from '../imgSkills/gulp.webp'
+import git from '../imgSkills/github.webp'
+import json from '../imgSkills/json.webp'
+
+export const skillView = [ HTML, CSS, Figma, Sass, Scss, bootstrap, materialUi, tailwind, js, jQuery, typescript, react, router, redux, nextjs, firebase, gulp, git, json ]
+
 export const menuNav = [
     {
         linkName: 'Home',
