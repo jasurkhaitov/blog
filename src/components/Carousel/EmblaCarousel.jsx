@@ -26,12 +26,12 @@ const EmblaCarousel = (props) => {
   }, [emblaApi])
 
   return (
-    <div className="embla md:py-[50px]">
+    <div className="hidden lg:block embla pt-[30px]">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {skillView.map((index) => (
-            <div className="embla__slide flex-[0_0_50%] xs:flex-[0_0_40%] xls:flex-[0_0_33%] sm:flex-[0_0_30%] md:flex-[0_0_25%] lg:flex-[0_0_20%]  xl:flex-[0_0_15%]" key={index}>
-              <img className='w-auto h-[50px]' src={index} alt="" />
+            <div className="embla__slide lg:flex-[0_0_20%] xl:flex-[0_0_15%]" key={index}>
+              <img className='w-auto h-[45px]' src={index} alt="" />
             </div>
           ))}
         </div>

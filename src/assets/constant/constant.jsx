@@ -15,10 +15,10 @@ import redux from "../imgSkills/redux.webp"
 import nextjs from "../imgSkills/nextjs.webp"
 import firebase from "../imgSkills/firebase.webp"
 import gulp from '../imgSkills/gulp.webp'
-import git from '../imgSkills/github.webp'
-import json from '../imgSkills/json.webp'
+import github from '../imgSkills/github.webp'
+import git from '../imgSkills/git.webp'
 
-export const skillView = [ HTML, CSS, Figma, Sass, Scss, bootstrap, materialUi, tailwind, js, jQuery, typescript, react, router, redux, nextjs, firebase, gulp, git, json ]
+export const skillView = [ HTML, CSS, Figma, Sass, Scss, bootstrap, materialUi, tailwind, js, jQuery, typescript, react, router, redux, nextjs, firebase, gulp, git, github ]
 
 export const menuNav = [
     {

@@ -1,11 +1,31 @@
 import React from 'react'
 import EmblaCarousel from './Carousel/EmblaCarousel'
 
+import HTML from "../assets/imgSkills/html.webp"
+import CSS from "../assets/imgSkills/css.webp"
+import Figma from "../assets/imgSkills/figma.webp"
+import Sass from "../assets/imgSkills/sass.webp"
+import Scss from "../assets/imgSkills/scss.webp"
+import bootstrap from "../assets/imgSkills/bootstrap.webp"
+import materialUi from "../assets/imgSkills/materialUi.webp"
+import tailwind from "../assets/imgSkills/tailwind.webp"
+import js from "../assets/imgSkills/js.webp"
+import jQuery from "../assets/imgSkills/jQuery.webp"
+import typescript from "../assets/imgSkills/typescript.webp"
+import react from "../assets/imgSkills/react.webp"
+import router from "../assets/imgSkills/react-router.webp"
+import redux from "../assets/imgSkills/redux.webp"
+import nextjs from "../assets/imgSkills/nextjs.webp"
+import firebase from "../assets/imgSkills/firebase.webp"
+import gulp from '../assets/imgSkills/gulp.webp'
+import github from '../assets/imgSkills/github.webp'
+import git from '../assets/imgSkills/git.webp'
+
 const OPTIONS = { loop: true }
 
 export default function Main() {
   return (
-    <main className='Overview pt-[30px] sm:pt-[40px] md:pt-[70px] bg-[#0a101e]'>
+    <main className='Overview pt-[30px] sm:pt-[40px] pb-[50px] md:pt-[70px] bg-[#0a101e]'>
         <div className='container m-auto'>
 
           <div className='relative w-full' data-aos = 'fade-up'>
@@ -18,6 +38,28 @@ export default function Main() {
           </div>
 
           <EmblaCarousel options={OPTIONS}/>
+
+          <div className='flex lg:hidden items-center flex-wrap justify-center gap-[30px] sm:gap-[45px] p-[15px] sm:px-0 text-center sm:w-[85%] md:w-[90%] xl:w-[80%] mt-10 m-auto' data-aos = 'fade-up'>
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={HTML} alt=""/>
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={CSS} alt=""/>
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={Figma} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={Sass} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={Scss} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={bootstrap} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={materialUi} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={tailwind} alt="" />
+            <img className='w-[20px] sm:w-[25px] md:w-[30px] h-auto lg:w-[40px]' src={gulp} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={js} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={jQuery} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={typescript} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={react} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={router} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={redux} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto bg-white rounded-full border-none' src={nextjs} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={firebase} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={github} alt="" />
+            <img className='w-[50px] md:w-[60px] lg:w-[77px] h-auto' src={git} alt="" />
+          </div>
 
         </div>
     </main>
