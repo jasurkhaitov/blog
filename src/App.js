@@ -33,7 +33,7 @@ function App() {
   })
 
   return (
-    <div className="font-dm">
+    <div className="font-dm bg-black">
 
       <Contexts.Provider>
         <Navbar/> 
