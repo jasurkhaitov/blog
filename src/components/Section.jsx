@@ -9,7 +9,7 @@ export default function Section() {
     const [hoveredTwo, setHoveredTwo] = useState(false)
 
   return (
-    <div className='Projects pt-[30px] bg-[#0a101e]'>
+    <div className='Projects pt-[60px] bg-[#0a101e]'>
         <div className="container m-auto">
 
             <div className='relative w-full' data-aos = 'fade-up'>
