@@ -1,0 +1,54 @@
+{
+	"nav": {
+		"home": "Bosh sahifa",
+		"about": "Men haqimda",
+		"skills": "Ko‘nikmalar",
+		"projects": "Loyihalar",
+		"contact": "Bog‘lanish"
+	},
+	"hero": {
+		"greeting": "Salom, men",
+		"role": "Frontend Dasturchi",
+		"description": "Zamonaviy, qulay va foydalanishga ochiq veb-loyihalar yarataman. Hozirgi texnologiyalar asosida foydalanuvchi uchun qulay, moslashuvchan interfeyslar ishlab chiqishga ixtisoslashganman.",
+		"contactButton": "Men bilan bog‘laning",
+		"projectsButton": "Loyihalarni ko‘rish"
+	},
+	"about": {
+		"title": "Men haqimda",
+		"subtitle": "Men — zamonaviy dizayn va qulay foydalanuvchi interfeyslarini yaratishga qiziqadigan frontend dasturchiman.",
+		"paragraph1": "5 yildan ortiq veb-dasturlash tajribam bor. Zamonaviy, moslashuvchan saytlar va ilovalar yaratishga ixtisoslashganman. Toza kod yozish, qulaylik va yaxshi foydalanuvchi tajribasiga katta e’tibor beraman.",
+		"paragraph2": "Veb-dasturlashdagi safarim kollejda birinchi sayt yaratganimdan boshlangan. Shundan beri turli kompaniyalar va mijozlar bilan ishlab, ularning raqamli g‘oyalarini hayotga tatbiq etib kelmoqdaman.",
+		"paragraph3": "Kod yozmayotganimda, yangi texnologiyalarni o‘rganish, open-source loyihalarda ishtirok etish yoki tabiat qo‘ynida dam olishni yoqtiraman.",
+		"resumeButton": "Rezyumeni yuklab olish"
+	},
+	"skills": {
+		"title": "Ko‘nikmalar va Texnologiyalar",
+		"subtitle": "Moslashuvchan va interaktiv veb-loyihalarni yaratish uchun turli zamonaviy texnologiyalar bilan ishlayman."
+	},
+	"projects": {
+		"title": "Tanlangan loyihalar",
+		"subtitle": "Bu yerda mening so‘nggi loyihalarimdan ba’zilari, ularning har biri mening tajriba va mahoratimni namoyish etadi.",
+		"viewMore": "GitHub’da ko‘proq ko‘rish",
+		"demoButton": "Demo",
+		"codeButton": "Kod",
+		"liveDemo": "Jonli demo"
+	},
+	"contact": {
+		"title": "Bog‘lanish",
+		"subtitle": "Yangi imkoniyatlar va hamkorliklarga doimo ochiqman. Agar biror loyiha bo‘yicha fikringiz bo‘lsa yoki tanishmoqchi bo‘lsangiz — bemalol yozing!",
+		"name": "Ism",
+		"email": "Email",
+		"subject": "Mavzu",
+		"message": "Xabar",
+		"sendButton": "Xabar yuborish",
+		"namePlaceholder": "Ismingiz",
+		"emailPlaceholder": "Email manzilingiz",
+		"subjectPlaceholder": "Mavzu",
+		"messagePlaceholder": "Xabaringiz"
+	},
+	"footer": {
+		"rights": "Barcha huquqlar himoyalangan.",
+		"terms": "Foydalanish shartlari",
+		"privacy": "Maxfiylik siyosati"
+	}
+}

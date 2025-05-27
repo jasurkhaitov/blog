@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "role": "Desarrollador Frontend",
+    "description": "Construyo experiencias digitales excepcionales y accesibles para la web. Enfocado en crear interfaces responsivas y amigables con tecnologías modernas.",
+    "contactButton": "Contáctame",
+    "projectsButton": "Ver Proyectos"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Soy un desarrollador frontend apasionado con buen ojo para el diseño y un compromiso para crear experiencias de usuario intuitivas.",
+    "paragraph1": "Con más de 5 años de experiencia en desarrollo web, me especializo en construir sitios web y aplicaciones modernas y responsivas. Me apasiona el código limpio, la accesibilidad y crear experiencias de usuario excepcionales.",
+    "paragraph2": "Mi viaje en el desarrollo web comenzó cuando construí mi primer sitio web en la universidad. Desde entonces, he trabajado con varias empresas y clientes para dar vida a sus visiones digitales.",
+    "paragraph3": "Cuando no estoy programando, puedes encontrarme explorando nuevas tecnologías, contribuyendo a proyectos de código abierto o disfrutando de actividades al aire libre.",
+    "resumeButton": "Descargar CV"
+  },
+  "skills": {
+    "title": "Habilidades y Tecnologías",
+    "subtitle": "Trabajo con una variedad de tecnologías modernas para crear experiencias web responsivas e interactivas."
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Aquí hay algunos de mis proyectos recientes que muestran mis habilidades y experiencia.",
+    "viewMore": "Ver Más en GitHub",
+    "demoButton": "Demo",
+    "codeButton": "Código",
+    "liveDemo": "Demo en Vivo"
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "subtitle": "Actualmente estoy abierto a nuevas oportunidades y colaboraciones. ¡No dudes en contactarme si tienes un proyecto en mente o simplemente quieres conectar!",
+    "name": "Nombre",
+    "email": "Correo",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "sendButton": "Enviar Mensaje",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "Tu correo",
+    "subjectPlaceholder": "Asunto",
+    "messagePlaceholder": "Tu mensaje"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "terms": "Términos de Servicio",
+    "privacy": "Privacidad"
+  }
+}
