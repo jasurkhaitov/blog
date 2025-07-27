@@ -1,29 +1,47 @@
 {
+	"theme": {
+		"light": "Yorugʻ",
+		"dark": "Qorongʻi",
+		"system": "Tizim bo‘yicha"
+	},
 	"nav": {
-		"home": "Bosh sahifa",
-		"about": "Men haqimda",
-		"skills": "Ko‘nikmalar",
-		"projects": "Loyihalar",
+		"channel": "Telegram Kanal",
+		"blog": "Blog",
+		"lang": "Til",
 		"contact": "Bog‘lanish"
 	},
 	"hero": {
-		"greeting": "Salom, men",
 		"role": "Frontend Dasturchi",
-		"description": "Zamonaviy, qulay va foydalanishga ochiq veb-loyihalar yarataman. Hozirgi texnologiyalar asosida foydalanuvchi uchun qulay, moslashuvchan interfeyslar ishlab chiqishga ixtisoslashganman.",
-		"contactButton": "Men bilan bog‘laning",
-		"projectsButton": "Loyihalarni ko‘rish"
+		"description": "Men g‘ildirakni to‘xtatmoqchi emasman, balki uni butunlay sindirmoqchiman.",
+		"blogButton": "Blogni O‘qish",
+		"aboutButton": "Men kimman"
 	},
 	"about": {
-		"title": "Men haqimda",
-		"subtitle": "Men — zamonaviy dizayn va qulay foydalanuvchi interfeyslarini yaratishga qiziqadigan frontend dasturchiman.",
-		"paragraph1": "5 yildan ortiq veb-dasturlash tajribam bor. Zamonaviy, moslashuvchan saytlar va ilovalar yaratishga ixtisoslashganman. Toza kod yozish, qulaylik va yaxshi foydalanuvchi tajribasiga katta e’tibor beraman.",
-		"paragraph2": "Veb-dasturlashdagi safarim kollejda birinchi sayt yaratganimdan boshlangan. Shundan beri turli kompaniyalar va mijozlar bilan ishlab, ularning raqamli g‘oyalarini hayotga tatbiq etib kelmoqdaman.",
-		"paragraph3": "Kod yozmayotganimda, yangi texnologiyalarni o‘rganish, open-source loyihalarda ishtirok etish yoki tabiat qo‘ynida dam olishni yoqtiraman.",
-		"resumeButton": "Rezyumeni yuklab olish"
+		"education": "Ta'lim",
+		"education-heading1": "Kompyuter fanlari va axborot muhandisligi bo‘yicha bakalavr",
+		"education-heading2": "Tillar",
+		"university": "Toshkent shahridagi INHA universiteti",
+		"uzbek-level": "O‘zbek tili (ona tili)",
+		"english-level": "Ingliz tili (B2)",
+
+		"experience": "Tajriba",
+		"status": "Hozirgi",
+		"experience-current-role": "Frontend Dasturchi",
+		"experience-current-period": "2025 - hozirgi vaqtgacha",
+		"experience-current-company": "tilmoch.ai",
+		"experience-current-description": "tilmoch.ai kompaniyasida Angular yordamida frontend dasturlash, foydalanuvchi interfeyslarini yaratish va API integratsiyasini amalga oshirish.",
+		"experience-freelance-role": "Frontend Dasturchi",
+		"experience-freelance-period": "2023 - 2025",
+		"experience-freelance-company": "Freelance loyihalar",
+		"experience-freelance-description": "Turli mijozlar uchun responsiv veb-ilovalar va e-commerce platformalarni yaratdim. Foydalanuvchi tajribasi va zamonaviy veb texnologiyalariga e’tibor qaratildi."
 	},
 	"skills": {
-		"title": "Ko‘nikmalar va Texnologiyalar",
-		"subtitle": "Moslashuvchan va interaktiv veb-loyihalarni yaratish uchun turli zamonaviy texnologiyalar bilan ishlayman."
+		"proficient": "Malakali",
+		"prior": "Oldingi tajriba"
+	},
+	"github": {
+		"go_to_github": "GitHub sahifasiga o'tish",
+		"ps_note": "P.S. GitHub repozitoriyalari rasmiy GitHub API orqali olindi."
 	},
 	"projects": {
 		"title": "Tanlangan loyihalar",
@@ -40,15 +58,26 @@
 		"email": "Email",
 		"subject": "Mavzu",
 		"message": "Xabar",
-		"sendButton": "Xabar yuborish",
 		"namePlaceholder": "Ismingiz",
 		"emailPlaceholder": "Email manzilingiz",
 		"subjectPlaceholder": "Mavzu",
-		"messagePlaceholder": "Xabaringiz"
+		"messagePlaceholder": "Xabaringiz",
+		"sendButton": "Xabar yuborish",
+		"sending": "Yuborilmoqda...",
+		"sent": "Yuborildi!",
+		"error": "Yuborishda xatolik yuz berdi"
 	},
 	"footer": {
-		"rights": "Barcha huquqlar himoyalangan.",
-		"terms": "Foydalanish shartlari",
-		"privacy": "Maxfiylik siyosati"
+		"rights": "Barcha huquqlar himoyalangan"
+	},
+	"whoami": {
+		"title": "Men kimman ?",
+		"intro": "Salom! Mening ismim Jasur Xaitov — do‘stlarim meni shunchaki Jasur deb chaqirishadi.",
+		"description1": "Men 20 yoshdaman, va frontend dasturchiman. JavaScript ekotizimiga juda qiziqaman. Hozirda Tilmoch.ai’da frontend dasturchi bo‘lib ishlayman va Toshkentdagi INHA universitetida o‘qiyman.",
+		"description2": "Men Surxondaryo viloyati, Denov tumanida tug‘ilganman. Bolaligimdan texnologiyalarga qiziqib kelganman.",
+		"description3": "17 yoshimda muhim qaror qabul qildim — dasturchi bo‘lishga qaror qildim. Bu qarorimdan har doim faxrlanaman.",
+		"description4": "Shundan beri men web dasturlash sohasida o‘rganib, loyihalar yaratib, doimiy rivojlanib kelmoqdaman.",
+		"description5": "Texnologiyadan tashqari, UFC janglarini tomosha qilishni va futbol o‘ynashni yoqtiraman — bu menga dam olish va energiya yig‘ishga yordam beradi.",
+		"closing": "Yana bir gap... o‘zimni reklama qilishni yoqtirmayman — shuning uchun qisqacha aytdim"
 	}
 }

@@ -1,54 +1,82 @@
 {
-  "nav": {
-    "home": "Home",
-    "about": "About",
-    "skills": "Skills",
-    "projects": "Projects",
-    "contact": "Contact"
-  },
-  "hero": {
-    "greeting": "Hi, I'm",
-    "role": "Frontend Developer",
-    "description": "I build exceptional and accessible digital experiences for the web. Focused on creating responsive, user-friendly interfaces with modern technologies.",
-    "contactButton": "Contact Me",
-    "projectsButton": "View Projects"
-  },
-  "about": {
-    "title": "About Me",
-    "subtitle": "I'm a passionate frontend developer with a keen eye for design and a commitment to creating intuitive user experiences.",
-    "paragraph1": "With over 5 years of experience in web development, I specialize in building modern, responsive websites and applications. I'm passionate about clean code, accessibility, and creating exceptional user experiences.",
-    "paragraph2": "My journey in web development began when I built my first website in college. Since then, I've worked with various companies and clients to bring their digital visions to life.",
-    "paragraph3": "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.",
-    "resumeButton": "Download Resume"
-  },
-  "skills": {
-    "title": "Skills & Technologies",
-    "subtitle": "I work with a variety of modern technologies to create responsive and interactive web experiences."
-  },
-  "projects": {
-    "title": "Featured Projects",
-    "subtitle": "Here are some of my recent projects that showcase my skills and expertise.",
-    "viewMore": "View More on GitHub",
-    "demoButton": "Demo",
-    "codeButton": "Code",
-    "liveDemo": "Live Demo"
-  },
-  "contact": {
-    "title": "Get In Touch",
-    "subtitle": "I'm currently open to new opportunities and collaborations. Feel free to reach out if you have a project in mind or just want to connect!",
-    "name": "Name",
-    "email": "Email",
-    "subject": "Subject",
-    "message": "Message",
-    "sendButton": "Send Message",
-    "namePlaceholder": "Your name",
-    "emailPlaceholder": "Your email",
-    "subjectPlaceholder": "Subject",
-    "messagePlaceholder": "Your message"
-  },
-  "footer": {
-    "rights": "All rights reserved.",
-    "terms": "Terms of Service",
-    "privacy": "Privacy"
-  }
+	"theme": {
+		"light": "Light",
+		"dark": "Dark",
+		"system": "System"
+	},
+	"nav": {
+		"channel": "Telegram Channel",
+		"blog": "Blog",
+		"lang": "Language",
+		"contact": "Contact"
+	},
+	"hero": {
+		"role": "Frontend Developer",
+		"description": "I’m not going to stop the wheel. I’m going to break the wheel.",
+		"blogButton": "Read Blog",
+		"aboutButton": "Who I am"
+	},
+	"about": {
+		"education": "Education",
+		"education-heading1": "Bachelor of Computer Science and Information Engineering",
+		"education-heading2": "Languages",
+		"university": "INHA University at Tashkent",
+		"uzbek-level": "Uzbek (Native)",
+		"english-level": "English (B2)",
+
+		"experience": "Experience",
+		"status": "Current",
+		"experience-current-role": "Frontend Developer",
+		"experience-current-period": "2025 - Present",
+		"experience-current-company": "tilmoch.ai",
+		"experience-current-description": "Supporting frontend development at tilmoch.ai using Angular, focusing on building and maintaining user interfaces and integrating APIs.",
+		"experience-freelance-role": "Frontend Developer",
+		"experience-freelance-period": "2023 - 2025",
+		"experience-freelance-company": "Freelance Projects",
+		"experience-freelance-description": "Built responsive web applications and e-commerce platforms for various clients. Focused on user experience and modern web technologies."
+	},
+	"skills": {
+		"proficient": "Proficient",
+		"prior": "Prior Experience"
+	},
+	"github": {
+		"go_to_github": "Go to GitHub",
+		"ps_note": "P.S. GitHub repositories are fetched using the official GitHub API."
+	},
+	"projects": {
+		"title": "Featured Projects",
+		"subtitle": "Here are some of my recent projects that showcase my skills and expertise.",
+		"viewMore": "View More on GitHub",
+		"demoButton": "Demo",
+		"codeButton": "Code",
+		"liveDemo": "Live Demo"
+	},
+	"contact": {
+		"title": "Get In Touch",
+		"name": "Name",
+		"email": "Email",
+		"subject": "Subject",
+		"message": "Message",
+		"namePlaceholder": "Your name",
+		"emailPlaceholder": "Your email",
+		"subjectPlaceholder": "Subject",
+		"messagePlaceholder": "Your message",
+		"sendButton": "Send Message",
+		"sending": "Sending...",
+		"sent": "Sent!",
+		"error": "Failed to send"
+	},
+	"footer": {
+		"rights": "All rights reserved"
+	},
+	"whoami": {
+		"title": "Who Am I ?",
+		"intro": "Hello! My name is Jasur Xaitov — but friends just call me Jasur.",
+		"description1": "I'm a 20-year-old frontend developer deeply passionate about the JavaScript ecosystem. Currently, I work as a Frontend Developer at Tilmoch.ai, and I’m also pursuing my studies at INHA University in Tashkent.",
+		"description2": "I was born in Surkhandaryo, Denov region, and from a young age, I’ve always been curious about technology.",
+		"description3": "At the age of 17, I made a life-changing decision — one that I’ll always be proud of: I chose to become a programmer.",
+		"description4": "Since then, I’ve been building, learning, and growing in the world of web development.",
+		"description5": "Outside of tech, I enjoy watching UFC fights and playing football — they help me recharge and stay balanced.",
+		"closing": "Oh, and one more thing... I'm not a fan of marketing or branding myself — so I’ll keep this short"
+	}
 }
