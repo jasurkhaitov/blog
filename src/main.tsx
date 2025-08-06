@@ -9,9 +9,9 @@ import './i18n.ts'
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
 		<BrowserRouter>
-		<ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-			<App />
-		</ThemeProvider>
+			<ThemeProvider defaultTheme='dark' storageKey='vite-ui-theme'>
+				<App />
+			</ThemeProvider>
 		</BrowserRouter>
 	</StrictMode>
 )

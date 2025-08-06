@@ -67,9 +67,6 @@
 		"sent": "Yuborildi!",
 		"error": "Yuborishda xatolik yuz berdi"
 	},
-	"footer": {
-		"rights": "Barcha huquqlar himoyalangan"
-	},
 	"whoami": {
 		"title": "Men kimman ?",
 		"intro": "Salom! Mening ismim Jasur Xaitov — do‘stlarim meni shunchaki Jasur deb chaqirishadi.",
@@ -78,6 +75,53 @@
 		"description3": "17 yoshimda muhim qaror qabul qildim — dasturchi bo‘lishga qaror qildim. Bu qarorimdan har doim faxrlanaman.",
 		"description4": "Shundan beri men web dasturlash sohasida o‘rganib, loyihalar yaratib, doimiy rivojlanib kelmoqdaman.",
 		"description5": "Texnologiyadan tashqari, UFC janglarini tomosha qilishni va futbol o‘ynashni yoqtiraman — bu menga dam olish va energiya yig‘ishga yordam beradi.",
-		"closing": "Yana bir gap... o‘zimni reklama qilishni yoqtirmayman — shuning uchun qisqacha aytdim"
+		"closing": "Yana bir gap... o‘zimni reklama qilishni yoqtirmayman — shuning uchun qisqacha aytdim",
+		"courses_title": "Hozirgi universitetdagi fanlarim",
+		"courses": {
+			"sas": "Signal va tizimlar",
+			"up": "Unix dasturlash",
+			"pas": "Ehtimollar nazariyasi va statistika",
+			"itba": "Biznes boshqaruviga kirish",
+			"cn": "Kompyuter tarmoqlari"
+		},
+		"contact": {
+			"blog": "IT blog",
+			"desc": "Bilganlarim va foydali bo'lishi mumkin bo'lgan ma'lumotlarini barchaga ulashish maqsadida ochilgan maqsadli kanal"
+		}
+	},
+	"shows": {
+		"movies": {
+			"title": "Mening 3 ta sevimli filmim",
+			"items": {
+				"The Shawshank Redemption": "Shoushenkdan qochish",
+				"Forrest Gump": "Forrest Gamp",
+				"Gladiator": "Gladiator"
+			}
+		},
+		"series": {
+			"title": "Mening 3 ta sevimli serialim",
+			"items": {
+				"Game of Thrones": "Taxtlar o‘yini",
+				"House of the Dragon": "Ajdarlar uyi",
+				"Prison Break": "Qamoqdan qochish"
+			}
+		},
+		"podcasts": {
+			"title": "Mening 3 ta sevimli podkastim",
+			"items": {
+				"QURULTOY": {
+					"name": "QURULTOY",
+					"desc": "QURULTOY loyihasiga xush kelibsiz. Biz oʻlkamiz oʻtmishi, tarixi va buguni haqida suhbat qurish maqsadida oʻtovimizga ekspertlarni chorladik. Zero, Abdulla Qodiriy aytganidek, “Moziyga qaytib ish koʻrish xayrlikdir”."
+				},
+				"PowerfulJRE": {
+					"name": "PowerfulJRE",
+					"desc": "The Joe Rogan Experience podkast"
+				}
+			}
+		}
+	},
+	"common": {
+		"watch": "Ko‘rish",
+		"contact": "Meni shu yerdan topishingiz mumkin"
 	}
 }

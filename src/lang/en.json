@@ -66,9 +66,6 @@
 		"sent": "Sent!",
 		"error": "Failed to send"
 	},
-	"footer": {
-		"rights": "All rights reserved"
-	},
 	"whoami": {
 		"title": "Who Am I ?",
 		"intro": "Hello! My name is Jasur Xaitov — but friends just call me Jasur.",
@@ -77,6 +74,54 @@
 		"description3": "At the age of 17, I made a life-changing decision — one that I’ll always be proud of: I chose to become a programmer.",
 		"description4": "Since then, I’ve been building, learning, and growing in the world of web development.",
 		"description5": "Outside of tech, I enjoy watching UFC fights and playing football — they help me recharge and stay balanced.",
-		"closing": "Oh, and one more thing... I'm not a fan of marketing or branding myself — so I’ll keep this short"
+		"closing": "Oh, and one more thing... I'm not a fan of marketing or branding myself — so I’ll keep this short",
+
+		"courses_title": "My Current University Courses",
+		"courses": {
+			"sas": " Signals and Systems",
+			"up": "Unix Programming",
+			"pas": "Probability and Statistics",
+			"itba": "Introduction to Business Administration",
+			"cn": "Computer Networks"
+		},
+		"contact": {
+			"blog": "IT blog",
+			"desc": "A dedicated channel created to share all my knowledge and information that may be useful"
+		}
+	},
+	"shows": {
+		"movies": {
+			"title": "My Top 3 Favorite Movies",
+			"items": {
+				"The Shawshank Redemption": "The Shawshank Redemption",
+				"Forrest Gump": "Forrest Gump",
+				"Gladiator": "Gladiator"
+			}
+		},
+		"series": {
+			"title": "My Top 3 Favorite Series",
+			"items": {
+				"Game of Thrones": "Game of Thrones",
+				"House of the Dragon": "House of the Dragon",
+				"Prison Break": "Prison Break"
+			}
+		},
+		"podcasts": {
+			"title": "My Top 3 Favorite Podcasts",
+			"items": {
+				"QURULTOY": {
+					"name": "QURULTOY",
+					"desc": "Welcome to the QURULTOY project. We invited experts to our yurt to talk about the history, past, and present of our country. As Abdulla Qodiriy said, 'Returning to the past is a blessed deed.'"
+				},
+				"PowerfulJRE": {
+					"name": "PowerfulJRE",
+					"desc": "The Joe Rogan Experience podcast"
+				}
+			}
+		}
+	},
+	"common": {
+		"watch": "Watch",
+		"contact": "You can find me here"
 	}
 }

@@ -46,6 +46,7 @@
 	--font-mulish: 'Mulish', sans-serif;
 
 	--breakpoint-xs: 30rem;
+	--breakpoint-xxs: 20rem;
 }
 
 :root {
@@ -124,4 +125,16 @@
 	body {
 		@apply bg-background text-foreground;
 	}
+}
+
+.terminal::-webkit-scrollbar {
+	height: 2px;
+	width: 6px;
+}
+.terminal::-webkit-scrollbar-track {
+	background: transparent;
+}
+.terminal::-webkit-scrollbar-thumb {
+	background-color: rgba(100, 100, 100, 0.3);
+	border-radius: 6px;
 }
