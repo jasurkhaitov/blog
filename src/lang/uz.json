@@ -7,12 +7,14 @@
 	"nav": {
 		"channel": "Telegram Kanal",
 		"blog": "Blog",
+		"'whoiam": "Men kimman ?",
 		"lang": "Til",
 		"contact": "Bog‘lanish"
 	},
 	"hero": {
 		"role": "Frontend Dasturchi",
 		"description": "Men g‘ildirakni to‘xtatmoqchi emasman, balki uni butunlay sindirmoqchiman.",
+		"desc": "Kuch - bu kuch",
 		"blogButton": "Blogni O‘qish",
 		"aboutButton": "Men kimman"
 	},
@@ -123,5 +125,21 @@
 	"common": {
 		"watch": "Ko‘rish",
 		"contact": "Meni shu yerdan topishingiz mumkin"
+	},
+
+	"blog": {
+		"header": {
+			"init": "> shaxsiy blog ishga tushirilmoqda...",
+			"mode": "✔ Dasturchi rejimi yoqildi",
+			"fetching": "✔ Fikrlar, g‘oyalar va tajribalar yuklanmoqda...",
+			"markdown": "✔ Markdown ko‘rsatuvchisi tayyor",
+			"success": "✔ Muvaffaqiyatli! Blog ishga tushdi.",
+			"logs": "✔ Dasturchi jurnallari yuklanmoqda...",
+			"welcome": "Mening olamimga xush kelibsiz"
+		},
+		"main": {
+			"title": "Blog",
+			"desc": "Blogdagi postlarim o‘zbek tilida yozilgan. Ingliz tilida internetda juda ko‘p ma’lumot mavjud. Mening maqsadim — ona tilimda ko‘proq kontent yaratib, o‘zbek auditoriyasiga foyda yetkazish."
+		}
 	}
 }

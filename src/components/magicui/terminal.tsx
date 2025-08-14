@@ -1,11 +1,11 @@
-import { cn } from "@/lib/utils";
-import { motion, type MotionProps } from "motion/react";
-import { useEffect, useRef, useState } from "react";
+import { cn } from "@/lib/utils"
+import { motion, type MotionProps } from "motion/react"
+import { useEffect, useRef, useState } from "react"
 
 interface AnimatedSpanProps extends MotionProps {
-  children: React.ReactNode;
-  delay?: number;
-  className?: string;
+  children: React.ReactNode
+  delay?: number
+  className?: string
 }
 
 export const AnimatedSpan = ({
@@ -23,14 +23,14 @@ export const AnimatedSpan = ({
   >
     {children}
   </motion.div>
-);
+)
 
 interface TypingAnimationProps extends MotionProps {
-  children: string;
-  className?: string;
-  duration?: number;
-  delay?: number;
-  as?: React.ElementType;
+  children: string
+  className?: string
+  duration?: number
+  delay?: number
+  as?: React.ElementType
 }
 
 export const TypingAnimation = ({
@@ -42,41 +42,41 @@ export const TypingAnimation = ({
   ...props
 }: TypingAnimationProps) => {
   if (typeof children !== "string") {
-    throw new Error("TypingAnimation: children must be a string. Received:");
+    throw new Error("TypingAnimation: children must be a string. Received:")
   }
 
   const MotionComponent = motion.create(Component, {
     forwardMotionProps: true,
-  });
+  })
 
-  const [displayedText, setDisplayedText] = useState<string>("");
-  const [started, setStarted] = useState(false);
-  const elementRef = useRef<HTMLElement | null>(null);
+  const [displayedText, setDisplayedText] = useState<string>("")
+  const [started, setStarted] = useState(false)
+  const elementRef = useRef<HTMLElement | null>(null)
 
   useEffect(() => {
     const startTimeout = setTimeout(() => {
-      setStarted(true);
-    }, delay);
-    return () => clearTimeout(startTimeout);
-  }, [delay]);
+      setStarted(true)
+    }, delay)
+    return () => clearTimeout(startTimeout)
+  }, [delay])
 
   useEffect(() => {
-    if (!started) return;
+    if (!started) return
 
-    let i = 0;
+    let i = 0
     const typingEffect = setInterval(() => {
       if (i < children.length) {
-        setDisplayedText(children.substring(0, i + 1));
-        i++;
+        setDisplayedText(children.substring(0, i + 1))
+        i++
       } else {
-        clearInterval(typingEffect);
+        clearInterval(typingEffect)
       }
-    }, duration);
+    }, duration)
 
     return () => {
-      clearInterval(typingEffect);
-    };
-  }, [children, duration, started]);
+      clearInterval(typingEffect)
+    }
+  }, [children, duration, started])
 
   return (
     <MotionComponent
@@ -86,19 +86,19 @@ export const TypingAnimation = ({
     >
       {displayedText}
     </MotionComponent>
-  );
-};
+  )
+}
 
 interface TerminalProps {
-  children: React.ReactNode;
-  className?: string;
+  children: React.ReactNode
+  className?: string
 }
 
 export const Terminal = ({ children, className }: TerminalProps) => {
   return (
     <div
       className={cn(
-        "z-0 h-full max-h-[400px] w-full max-w-xl m-auto rounded-xl border border-border bg-background",
+        "z-0 h-full min-h-[260px] w-full max-w-xl m-auto rounded-xl border border-border bg-background",
         className,
       )}
     >
@@ -113,5 +113,5 @@ export const Terminal = ({ children, className }: TerminalProps) => {
         <code className="grid gap-y-1 terminal py-2 overflow-auto">{children}</code>
       </pre>
     </div>
-  );
-};
+  )
+}

@@ -5,6 +5,7 @@ import { FaSpinner, FaCheck, FaTimes } from 'react-icons/fa'
 import { telegramBotAPI } from '@/util/data'
 import Footer from '@/components/shared/Footer'
 import Navbar from '@/components/shared/Navbar'
+import AnimatedSection from '@/components/shared/AnimatedSection'
 
 export default function ContactPage() {
   const { t } = useTranslation()
@@ -95,7 +96,8 @@ export default function ContactPage() {
     <div className="min-h-screen max-w-7xl m-auto px-4 bg-background flex flex-col">
       <Navbar />
 
-      <main className="flex-grow w-full flex items-center justify-center mx-auto px-4">
+      <main className="flex-grow w-full flex items-center justify-center mx-auto">
+        <AnimatedSection>
           <div className="bg-card w-md p-6 rounded-lg shadow-sm">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid gap-4 sm:grid-cols-2">
@@ -169,6 +171,7 @@ export default function ContactPage() {
               </Button>
             </form>
           </div>
+        </AnimatedSection>
       </main>
 
       <Footer />

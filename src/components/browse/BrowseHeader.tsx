@@ -31,7 +31,7 @@ export default function BrowseHeader() {
 					</h2>
 
 					<p className='text-muted-foreground max-w-[600px]'>
-						{t('hero.description')}
+						{t('hero.desc')}
 					</p>
 
 					<div className='flex gap-4 mt-5'>

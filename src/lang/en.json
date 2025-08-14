@@ -7,12 +7,14 @@
 	"nav": {
 		"channel": "Telegram Channel",
 		"blog": "Blog",
+		"whoiam": "Who I am ?",
 		"lang": "Language",
 		"contact": "Contact"
 	},
 	"hero": {
 		"role": "Frontend Developer",
 		"description": "I’m not going to stop the wheel. I’m going to break the wheel.",
+		"desc": "Power is power",
 		"blogButton": "Read Blog",
 		"aboutButton": "Who I am"
 	},
@@ -123,5 +125,21 @@
 	"common": {
 		"watch": "Watch",
 		"contact": "You can find me here"
+	},
+
+	"blog": {
+		"header": {
+			"init": "> initializing personal blog...",
+			"mode": "✔ Developer mode activated",
+			"fetching": "✔ Fetching thoughts, ideas & experiences...",
+			"markdown": "✔ Markdown renderer ready",
+			"success": "✔ Success! Blog booted up.",
+			"logs": "✔ Loading developer logs...",
+			"welcome": "Welcome to my world"
+		},
+		"main": {
+			"title": "Blog",
+			"desc": "My blog posts are written in Uzbek. There is a lot of information available in English on the internet. My motivation is to generate more content in my native language so it can benefit the Uzbek audience."
+		}
 	}
 }
