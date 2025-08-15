@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Menu, MessageCircle, BookOpen, Contact, User } from 'lucide-react'
+import { Menu, MessageCircle, BookOpen, Contact } from 'lucide-react'
 import { Button } from '../ui/button'
 import {
 	Sheet,
@@ -62,14 +62,14 @@ export default function NavbarMobile({ lang }: MobileNavProps) {
 						{t('nav.blog')}
 					</Link>
 
-					<Link
+					{/* <Link
 						to={`/${currentLang}/whoiam`}
 						className='flex items-center gap-3 rounded-md px-4 py-3 border border-transparent hover:border-gray-300 dark:hover:border-gray-700 transition-all text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
 						onClick={() => setOpen(false)}
 					>
 						<User className='h-5 w-5' />
 						{t('nav.whoiam')}
-					</Link>
+					</Link> */}
 
 					<Link
 						to={`/${currentLang}/contact`}

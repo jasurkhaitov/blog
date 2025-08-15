@@ -7,21 +7,33 @@ import { Grid3X3, List, Search, Calendar, ArrowRight, Languages } from "lucide-r
 import { listOfPost } from "@/posts/posts"
 import { Link } from "react-router-dom"
 
+function highlightText(text: string, highlight: string) {
+	if (!highlight.trim()) return text
+	const regex = new RegExp(`(${highlight})`, "gi")
+	return text.split(regex).map((part, i) =>
+		part.toLowerCase() === highlight.toLowerCase() ? (
+			<span key={i} className="text-green-500 font-semibold">
+				{part}
+			</span>
+		) : (
+			part
+		)
+	)
+}
+
 export default function BlogPosts() {
 	const [searchTerm, setSearchTerm] = useState("")
 	const [viewMode, setViewMode] = useState<"grid" | "list">("grid")
 
-	const filteredPosts = listOfPost.filter(
-		(post) =>
-			post.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-			post.hashtag.some((tag) => tag.toLowerCase().includes(searchTerm.toLowerCase())),
+	const filteredPosts = listOfPost.filter(post =>
+		post.name.toLowerCase().includes(searchTerm.toLowerCase())
 	)
 
 	return (
 		<div className="mt-10 w-full">
 			<div className="flex flex-col w-full xs:flex-row gap-4 mb-8">
 				<div className="relative flex-1">
-					<Search className="absolute left-3 top-1/2 transform -translate-y-[60%] text-muted-foreground w-4 h-4" />
+					<Search className="absolute left-3 top-[55%] transform -translate-y-[60%] text-muted-foreground w-4 h-4" />
 					<Input
 						placeholder="Search posts and tags..."
 						value={searchTerm}
@@ -65,7 +77,7 @@ export default function BlogPosts() {
 								</div>
 								<CardHeader className="py-1">
 									<CardTitle className="text-xl font-bold leading-tight group-hover:text-primary transition-colors">
-										{post.name}
+										{highlightText(post.name, searchTerm)}
 									</CardTitle>
 									<div className="flex items-center gap-2 text-sm text-muted-foreground">
 										<Calendar className="w-4 h-4" />
@@ -116,7 +128,7 @@ export default function BlogPosts() {
 										</div>
 										<div className="flex-1 min-w-0">
 											<h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-												{post.name}
+												{highlightText(post.name, searchTerm)}
 											</h3>
 											<div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
 												<Calendar className="w-4 h-4" />
