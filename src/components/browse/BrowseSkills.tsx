@@ -28,9 +28,8 @@ const BrowseSkills = () => {
 				</div>
 
 				<div
-					className={`flex flex-wrap gap-3 transition-all duration-500 ${
-						isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-					}`}
+					className={`flex flex-wrap gap-3 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+						}`}
 				>
 					{proficientSkills.map((skill, index) => (
 						<div
@@ -55,9 +54,8 @@ const BrowseSkills = () => {
 				</div>
 
 				<div
-					className={`flex flex-wrap gap-3 transition-all duration-500 ${
-						isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-					}`}
+					className={`flex flex-wrap gap-3 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+						}`}
 					style={{ transitionDelay: '200ms' }}
 				>
 					{priorExperienceSkills.map((skill, index) => (

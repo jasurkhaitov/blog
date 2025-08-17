@@ -6,13 +6,14 @@ import { Badge } from "@/components/ui/badge"
 import { Grid3X3, List, Search, Calendar, ArrowRight, Languages } from "lucide-react"
 import { listOfPost } from "@/posts/posts"
 import { Link } from "react-router-dom"
+import { blogLangBadgeColor } from '@/helper/func'
 
 function highlightText(text: string, highlight: string) {
 	if (!highlight.trim()) return text
 	const regex = new RegExp(`(${highlight})`, "gi")
 	return text.split(regex).map((part, i) =>
 		part.toLowerCase() === highlight.toLowerCase() ? (
-			<span key={i} className="text-green-500 font-semibold">
+			<span key={i} className="text-green-500 font-bold">
 				{part}
 			</span>
 		) : (
@@ -65,51 +66,52 @@ export default function BlogPosts() {
 			{viewMode === "grid" ? (
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{filteredPosts.map((post) => (
-						<Link key={post.slug} to={`/posts/${post.slug}`} className="group">
-							<Card className="overflow-hidden gap-3 p-0 pb-3 border transition-all duration-300 h-full rounded-xl">
-								<div className="relative overflow-hidden">
-									<img
-										src={post.img}
-										alt={post.name}
-										className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-									/>
-									<div className="absolute inset-0 bg-gradient-to-t from-black/30 dark:from-black/70 via-black/10 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
-								</div>
-								<CardHeader className="py-1">
-									<CardTitle className="text-xl font-bold leading-tight group-hover:text-primary transition-colors">
-										{highlightText(post.name, searchTerm)}
-									</CardTitle>
-									<div className="flex items-center gap-2 text-sm text-muted-foreground">
+
+						<Card className="overflow-hidden group gap-3 p-0 pb-5 border transition-all duration-300 h-full rounded-xl">
+							<div className="relative overflow-hidden">
+								<img
+									src={post.img}
+									alt={post.name}
+									className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/30 dark:from-black/70 via-black/10 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
+							</div>
+
+							<CardHeader className="py-1">
+								<CardTitle className="text-2xl font-bold leading-tight group-hover:text-primary transition-colors">
+									{highlightText(post.name, searchTerm)}
+								</CardTitle>
+								<div className='flex items-center justify-between mt-1'>
+									<div className="flex cursor-pointer items-center gap-2 text-sm hover:text-foreground transition-all text-muted-foreground">
 										<Calendar className="w-4 h-4" />
 										{post.date}
 									</div>
-									<div className="flex items-center gap-1 text-sm text-muted-foreground">
+
+									<div className={`flex p-0 px-3 shadow-none rounded-xl items-center gap-1 text-sm ${blogLangBadgeColor(post.lang)}`}>
 										<Languages className="w-4 h-4" /> {post.lang}
 									</div>
-								</CardHeader>
-								<CardContent className="pt-0">
-									<div className="flex flex-wrap gap-2 mb-4">
-										{post.hashtag.slice(0, 3).map((tag, index) => (
-											<Badge
-												key={index}
-												variant="secondary"
-												className="text-xs font-medium rounded-full px-3 py-1 bg-primary/10 text-primary"
-											>
-												{tag}
-											</Badge>
-										))}
-										{post.hashtag.length > 3 && (
-											<Badge variant="outline" className="text-xs rounded-full">
-												+{post.hashtag.length - 3}
-											</Badge>
-										)}
-									</div>
-									<div className="flex items-center text-sm font-semibold text-primary group-hover:gap-2 transition-all">
+								</div>
+							</CardHeader>
+
+							<CardContent className="pt-0">
+								<div className="flex flex-wrap gap-2 mb-4">
+									{post.hashtag.map((tag, index) => (
+										<Badge
+											key={index}
+											variant="secondary"
+											className={`text-xs font-medium rounded-full px-3 py-1 ${tag.color}`}
+										>
+											{tag.name}
+										</Badge>
+									))}
+								</div>
+									<Link key={post.slug} to={`/posts/${post.slug}`}>
+								<Button className='h-8 w-full'>
 										Read more
-									</div>
-								</CardContent>
-							</Card>
-						</Link>
+								</Button>
+								</Link>
+							</CardContent>
+						</Card>
 					))}
 				</div>
 			) : (
@@ -138,20 +140,15 @@ export default function BlogPosts() {
 												<Languages className="w-4 h-4" /> {post.lang}
 											</div>
 											<div className="flex flex-wrap gap-2 mb-3">
-												{post.hashtag.slice(0, 4).map((tag, index) => (
+												{post.hashtag.map((tag, index) => (
 													<Badge
 														key={index}
 														variant="secondary"
 														className="text-xs rounded-full px-3 py-1 bg-primary/10 text-primary"
 													>
-														{tag}
+														{tag.name}
 													</Badge>
 												))}
-												{post.hashtag.length > 4 && (
-													<Badge variant="outline" className="text-xs rounded-full">
-														+{post.hashtag.length - 4}
-													</Badge>
-												)}
 											</div>
 											<div className="flex items-center text-sm font-semibold text-primary group-hover:gap-2 transition-all">
 												Read article

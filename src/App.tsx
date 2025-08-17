@@ -3,6 +3,7 @@ import { lazy, Suspense, useEffect } from "react"
 import { useTranslation } from "react-i18next"
 import { Loader } from "lucide-react"
 import PostPage from "./pages/PostPage"
+import { useYandexMetrica } from './hooks/useYandexMetrica'
 
 const BrowsePage = lazy(() => import("./pages/BrowsePage"))
 const BlogPage = lazy(() => import("./pages/BlogPage"))
@@ -43,6 +44,7 @@ function RedirectToLanguage() {
 
 export default function App() {
   const { i18n } = useTranslation()
+  useYandexMetrica(103783941)
 
   const currentLang = ["en", "ru", "uz"].includes(i18n.language)
     ? i18n.language
@@ -58,22 +60,18 @@ export default function App() {
         }
       >
         <Routes>
-          {/* Redirect root to current language */}
           <Route
             path="/"
             element={<Navigate to={`/${currentLang}`} replace />}
           />
 
-          {/* Language wrapper */}
           <Route path="/:lang/*" element={<LanguageWrapper />} />
 
-          {/* Redirects for non-lang-prefixed routes */}
           <Route path="/blog" element={<RedirectToLanguage />} />
           <Route path="/contact" element={<RedirectToLanguage />} />
           <Route path="/whoiam" element={<RedirectToLanguage />} />
           <Route path="/posts/:slug" element={<RedirectToLanguage />} />
 
-          {/* Catch-all */}
           <Route
             path="*"
             element={<Navigate to={`/${currentLang}`} replace />}
