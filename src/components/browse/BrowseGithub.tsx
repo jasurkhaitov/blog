@@ -10,11 +10,15 @@ const BrowseGithub = () => {
 	const [repos, setRepos] = useState<Repo[]>([])
 
 	useEffect(() => {
-		fetch('https://api.github.com/users/jasurkhaitov')
+		const headers = {
+			Authorization: `token ${import.meta.env.VITE_GITHUB_TOKEN}`
+		}
+
+		fetch('https://api.github.com/users/jasurkhaitov', { headers })
 			.then(res => res.json())
 			.then(setProfileData)
 
-		fetch('https://api.github.com/users/jasurkhaitov/repos?sort=updated')
+		fetch('https://api.github.com/users/jasurkhaitov/repos?sort=updated', { headers })
 			.then(res => res.json())
 			.then(setRepos)
 	}, [])

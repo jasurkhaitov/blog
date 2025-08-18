@@ -2,32 +2,25 @@ import Img from "../assets/example.webp"
 
 export const listOfPost = [
   {
+    id: 1,
     img: Img,
     hashtag: [
       {
         name: '#js',
-        color: 'bg-yellow-500/20 text-yellow-600',
+        color: 'text-yellow-600',
       },
       {
         name: '#ts',
-        color: 'bg-blue-500/20 text-blue-600',
+        color: 'text-blue-700',
       },
       {
         name: '#html',
-        color: 'bg-orange-500/20 text-orange-600',
+        color: 'text-orange-600',
       },
       {
         name: '#css',
-        color: 'bg-indigo-500/20 text-indigo-600',
-      },
-      {
-        name: '#react',
-        color: 'bg-cyan-500/20 text-cyan-600',
-      },
-      {
-        name: '#angular',
-        color: 'bg-red-500/20 text-red-600',
-      },
+        color: ' text-indigo-600',
+      }
     ],
     name: "Hello World",
     slug: "hello-world",
@@ -37,31 +30,24 @@ export const listOfPost = [
     lang: 'uz'
   },
   {
+    id: 2,
     img: Img,
     hashtag: [
       {
         name: '#js',
-        color: 'bg-yellow-500/20 text-yellow-600',
+        color: ' text-yellow-600',
       },
       {
         name: '#ts',
-        color: 'bg-blue-500/20 text-blue-600',
-      },
-      {
-        name: '#html',
-        color: 'bg-orange-500/20 text-orange-600',
-      },
-      {
-        name: '#css',
-        color: 'bg-indigo-500/20 text-indigo-600',
+        color: ' text-blue-600',
       },
       {
         name: '#react',
-        color: 'bg-cyan-500/20 text-cyan-600',
+        color: ' text-cyan-600',
       },
       {
         name: '#angular',
-        color: 'bg-red-500/20 text-red-600',
+        color: ' text-red-600',
       },
     ],
     name: "Nimadur",
@@ -72,31 +58,24 @@ export const listOfPost = [
     lang: 'en'
   },
   {
+    id: 3,
     img: Img,
     hashtag: [
       {
-        name: '#js',
-        color: 'bg-yellow-500/20 text-yellow-600',
-      },
-      {
-        name: '#ts',
-        color: 'bg-blue-500/20 text-blue-600',
-      },
-      {
         name: '#html',
-        color: 'bg-orange-500/20 text-orange-600',
+        color: ' text-orange-600',
       },
       {
         name: '#css',
-        color: 'bg-indigo-500/20 text-indigo-600',
+        color: ' text-indigo-600',
       },
       {
         name: '#react',
-        color: 'bg-cyan-500/20 text-cyan-600',
+        color: ' text-cyan-600',
       },
       {
         name: '#angular',
-        color: 'bg-red-500/20 text-red-600',
+        color: ' text-red-600',
       },
     ],
     name: "Kimdur",
@@ -107,3 +86,17 @@ export const listOfPost = [
     lang: 'ru'
   }
 ]
+
+// text-yellow-600
+// text-cyan-600
+// text-fuchsia-600
+// text-orange-600
+// text-rose-60
+// text-violet-600
+// text-blue-600
+// text-indigo-600
+// text-red-600
+// text-teal-600
+// text-lime-600
+// text-amber-600
+// text-sky-600
