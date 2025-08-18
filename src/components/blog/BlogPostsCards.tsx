@@ -1,8 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Calendar, Languages, Pin } from "lucide-react"
+import { Calendar, Languages, Pin, Link2, Check } from "lucide-react"
 import { Link } from "react-router-dom"
 import { blogLangBadgeColor } from '@/helper/func'
+import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
 
 interface BlogPost {
 	id: number
@@ -11,7 +13,7 @@ interface BlogPost {
 	date: string
 	lang: string
 	slug: string
-	pinned?: boolean // Added pinned property
+	pinned?: boolean
 	hashtag: Array<{ name: string; color: string }>
 }
 
@@ -36,6 +38,24 @@ function highlightText(text: string, highlight: string) {
 }
 
 export function BlogPostCard({ post, searchTerm, viewMode }: BlogPostCardProps) {
+	const { t } = useTranslation()
+	const [copied, setCopied] = useState(false)
+
+	const handleCopyLink = async (e: React.MouseEvent) => {
+		e.preventDefault()
+		e.stopPropagation()
+
+		const url = `${window.location.origin}/posts/${post.slug}`
+
+		try {
+			await navigator.clipboard.writeText(url)
+			setCopied(true)
+			setTimeout(() => setCopied(false), 2000)
+		} catch (err) {
+			console.error('Failed to copy link:', err)
+		}
+	}
+
 	if (viewMode === "list") {
 		return (
 			<Card className={`overflow-hidden group gap-3 border transition-all duration-300 h-full rounded-xl ${post.pinned ? 'ring-1 ring-primary/30 border-primary/30' : ''
@@ -49,12 +69,10 @@ export function BlogPostCard({ post, searchTerm, viewMode }: BlogPostCardProps) 
 								className="w-auto h-48 rounded-xl object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
 							/>
 							<div className="absolute inset-0 bg-gradient-to-t from-black/30 dark:from-black/70 via-black/10 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
-
-							{/* Pinned badge for list view */}
 							{post.pinned && (
-								<div className="absolute top-3 left-3 bg-primary text-primary-foreground px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1 shadow-lg">
+								<div className="absolute top-3 left-3 bg-card text-foreground px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1 shadow-lg">
 									<Pin className="w-3 h-3" />
-									Pinned
+									{t("blog.pinned")}
 								</div>
 							)}
 						</div>
@@ -86,11 +104,25 @@ export function BlogPostCard({ post, searchTerm, viewMode }: BlogPostCardProps) 
 									</div>
 								</div>
 
-								<Link key={post.slug} className='mt-12' to={`/posts/${post.slug}`}>
-									<Button className='h-8'>
-										Read more
+								<div className="flex justify-start gap-2 mt-12">
+									<Link key={post.slug} to={`/posts/${post.slug}`}>
+										<Button className='h-8'>
+											{t("blog.readBtn")}
+										</Button>
+									</Link>
+									<Button
+										variant="outline"
+										size="sm"
+										className="h-8 px-3"
+										onClick={handleCopyLink}
+									>
+										{copied ? (
+											<Check className="w-4 h-4 text-green-500" />
+										) : (
+											<Link2 className="w-4 h-4" />
+										)}
 									</Button>
-								</Link>
+								</div>
 							</CardHeader>
 						</div>
 					</div>
@@ -111,9 +143,9 @@ export function BlogPostCard({ post, searchTerm, viewMode }: BlogPostCardProps) 
 				<div className="absolute inset-0 bg-gradient-to-t from-black/30 dark:from-black/70 via-black/10 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
 
 				{post.pinned && (
-					<div className="absolute top-3 right-3 bg-primary text-primary-foreground px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1 shadow-lg">
+					<div className="absolute top-3 right-3 bg-card text-foreground px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1 shadow-lg">
 						<Pin className="w-3 h-3" />
-						Pinned
+						{t("blog.pinned")}
 					</div>
 				)}
 			</div>
@@ -146,11 +178,25 @@ export function BlogPostCard({ post, searchTerm, viewMode }: BlogPostCardProps) 
 						</p>
 					))}
 				</div>
-				<Link key={post.slug} to={`/posts/${post.slug}`}>
-					<Button className='h-8 w-full'>
-						Read more
+				<div className="flex gap-2">
+					<Link key={post.slug} to={`/posts/${post.slug}`} className="flex-1">
+						<Button className='h-8 w-full'>
+							{t("blog.readBtn")}
+						</Button>
+					</Link>
+					<Button
+						variant="outline"
+						size="sm"
+						className="h-8 px-3"
+						onClick={handleCopyLink}
+					>
+						{copied ? (
+							<Check className="w-4 h-4 text-green-500" />
+						) : (
+							<Link2 className="w-4 h-4" />
+						)}
 					</Button>
-				</Link>
+				</div>
 			</CardContent>
 		</Card>
 	)

@@ -3,6 +3,7 @@ import { listOfPost } from "@/posts/posts"
 import { BlogPostCard } from "./BlogPostsCards"
 import { SearchAndViewControls } from "./SearchAndViewControls"
 import { EmptyState } from "./EmptyState"
+import EmptyBlog from './EmptyBlogPost'
 
 export default function BlogPosts() {
 	const [searchTerm, setSearchTerm] = useState("")
@@ -89,8 +90,12 @@ export default function BlogPosts() {
 				)}
 			</div>
 
-			{filteredPosts.length === 0 && (
+			{filteredPosts.length === 0 && listOfPost.length > 0 && (
 				<EmptyState onClearSearch={handleClearSearch} />
+			)}
+
+			{listOfPost.length === 0 && (
+				<EmptyBlog />
 			)}
 		</div>
 	)

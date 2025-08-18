@@ -1,6 +1,7 @@
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Grid2X2, List, Search } from "lucide-react"
+import { useTranslation } from 'react-i18next'
 
 interface SearchAndViewControlsProps {
 	searchTerm: string
@@ -15,12 +16,13 @@ export function SearchAndViewControls({
 	viewMode,
 	onViewModeChange
 }: SearchAndViewControlsProps) {
+	const { t } = useTranslation()
 	return (
 		<div className="flex flex-col w-full xs:flex-row gap-4 mb-8">
 			<div className="relative flex-1">
 				<Search className="absolute left-3 top-[55%] transform -translate-y-[60%] text-muted-foreground w-4 h-4" />
 				<Input
-					placeholder="Search posts..."
+					placeholder={t("blog.searchInput")}
 					value={searchTerm}
 					onChange={(e) => setSearchTerm(e.target.value)}
 					className="pl-10 h-11 border-2 focus:border-primary/50 transition-colors"

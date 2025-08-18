@@ -140,6 +140,20 @@
 		"main": {
 			"title": "Blog",
 			"desc": "My blog posts are written in Uzbek. There is a lot of information available in English on the internet. My motivation is to generate more content in my native language so it can benefit the Uzbek audience."
+		},
+		"searchInput": "Search posts...",
+		"readBtn": "Read Post",
+		"pinned": "Pinned",
+
+		"emptyState":{
+			"title": "No posts found",
+			"desc": "We couldn't find any posts matching your search. Try different keywords or browse all posts.",
+			"btn": "Clear Search"
+		},
+
+		"noblog": {
+			"title": "No blog posts yet",
+			"desc": "It looks like there are no blog posts available at the moment."
 		}
 	}
 }

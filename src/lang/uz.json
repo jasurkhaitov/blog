@@ -140,6 +140,20 @@
 		"main": {
 			"title": "Blog",
 			"desc": "Blogdagi postlarim o‘zbek tilida yozilgan. Ingliz tilida internetda juda ko‘p ma’lumot mavjud. Mening maqsadim — ona tilimda ko‘proq kontent yaratib, o‘zbek auditoriyasiga foyda yetkazish."
+		},
+		"searchInput": "Postlarni qidirish...",
+		"readBtn": "Postni o‘qish",
+		"pinned": "Qadalgan",
+
+		"emptyState": {
+			"title": "Hech qanday post topilmadi",
+			"desc": "Qidiruvingizga mos keladigan postlar topilmadi. Boshqa kalit so‘zlarni sinab ko‘ring yoki barcha postlarni ko‘rib chiqing.",
+			"btn": "Qidiruvni tozalash"
+		},
+
+		"noblog": {
+			"title": "Hozircha blog postlari mavjud emas",
+			"desc": "Ayni paytda blogda hech qanday post topilmadi."
 		}
 	}
 }
