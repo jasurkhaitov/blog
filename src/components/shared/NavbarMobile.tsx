@@ -40,7 +40,7 @@ export default function NavbarMobile({ lang }: MobileNavProps) {
 			</SheetTrigger>
 
 			<SheetContent side='right' className='w-[300px] sm:w-[400px] p-0'>
-				<div className='flex mt-16 border flex-col gap-3 p-3 pt-0'>
+				<div className='flex mt-16 border flex-col gap-3 p-3 pt-3'>
 					<SheetTitle className='sr-only'>Navigation Menu</SheetTitle>
 
 					<a

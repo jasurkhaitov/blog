@@ -1,4 +1,7 @@
 {
+	"pageTitles": {
+		
+	},
 	"theme": {
 		"light": "Light",
 		"dark": "Dark",
@@ -137,15 +140,17 @@
 			"logs": "✔ Loading developer logs...",
 			"welcome": "Welcome to my world"
 		},
+
 		"main": {
 			"title": "Blog",
 			"desc": "My blog posts are written in Uzbek. There is a lot of information available in English on the internet. My motivation is to generate more content in my native language so it can benefit the Uzbek audience."
 		},
+
 		"searchInput": "Search posts...",
 		"readBtn": "Read Post",
 		"pinned": "Pinned",
 
-		"emptyState":{
+		"emptyState": {
 			"title": "No posts found",
 			"desc": "We couldn't find any posts matching your search. Try different keywords or browse all posts.",
 			"btn": "Clear Search"

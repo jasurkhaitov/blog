@@ -2,7 +2,7 @@ import AnimatedSection from '../components/shared/AnimatedSection'
 import BrowseHeader from '@/components/browse/BrowseHeader'
 import BrowseAbout from '@/components/browse/BrowseAbout'
 import BrowseSkills from '@/components/browse/BrowseSkills'
-import BrowseGithub from '@/components/browse/BrowseGithub'
+// import BrowseGithub from '@/components/browse/BrowseGithub'
 import Contact from '@/components/shared/Contact'
 import Footer from '@/components/shared/Footer'
 import Navbar from '@/components/shared/Navbar'
@@ -19,9 +19,9 @@ export default function BrowsePage() {
 					<BrowseAbout />
 				</AnimatedSection>
 
-				<AnimatedSection className='py-10 md:py-25 border-t'>
+				{/* <AnimatedSection className='py-10 md:py-25 border-t'>
 					<BrowseGithub />
-				</AnimatedSection>
+				</AnimatedSection> */}
 
 				<AnimatedSection className='py-10 md:py-25 border-t'>
 					<BrowseSkills />

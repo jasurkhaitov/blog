@@ -45,7 +45,7 @@ export function BlogPostCard({ post, searchTerm, viewMode }: BlogPostCardProps) 
 		e.preventDefault()
 		e.stopPropagation()
 
-		const url = `${window.location.origin}/posts/${post.slug}`
+		const url = `https://www.jasurkhaitov.uz/posts/${post.slug}`
 
 		try {
 			await navigator.clipboard.writeText(url)

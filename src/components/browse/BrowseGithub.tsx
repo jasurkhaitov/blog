@@ -20,7 +20,6 @@ const BrowseGithub = () => {
 
 		const fetchData = async () => {
 			try {
-				// profile
 				const profileRes = await fetch("https://api.github.com/users/jasurkhaitov", { headers })
 				const profileJson = await profileRes.json()
 				if (profileRes.ok) {
@@ -29,13 +28,10 @@ const BrowseGithub = () => {
 					throw new Error(profileJson.message || "Failed to fetch profile")
 				}
 
-				// repos
 				const reposRes = await fetch("https://api.github.com/users/jasurkhaitov/repos?sort=updated", { headers })
 				const reposJson = await reposRes.json()
 				if (reposRes.ok && Array.isArray(reposJson)) {
 					setRepos(reposJson)
-				} else {
-					throw new Error(reposJson.message || "Failed to fetch repos")
 				}
 			} catch (err) {
 				if (err instanceof Error) {

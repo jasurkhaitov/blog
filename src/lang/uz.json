@@ -134,13 +134,15 @@
 			"fetching": "✔ Fikrlar, g‘oyalar va tajribalar yuklanmoqda...",
 			"markdown": "✔ Markdown ko‘rsatuvchisi tayyor",
 			"success": "✔ Muvaffaqiyatli! Blog ishga tushdi.",
-			"logs": "✔ Dasturchi postlari yuklanmoqda...",
+			"logs": "✔ Postlar yuklanmoqda...",
 			"welcome": "Mening olamimga xush kelibsiz"
 		},
+
 		"main": {
 			"title": "Blog",
 			"desc": "Blogdagi postlarim o‘zbek tilida yozilgan. Ingliz tilida internetda juda ko‘p ma’lumot mavjud. Mening maqsadim — ona tilimda ko‘proq kontent yaratib, o‘zbek auditoriyasiga foyda yetkazish."
 		},
+		
 		"searchInput": "Postlarni qidirish...",
 		"readBtn": "Postni o‘qish",
 		"pinned": "Qadalgan",

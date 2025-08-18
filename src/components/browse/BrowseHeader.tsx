@@ -15,24 +15,19 @@ export default function BrowseHeader() {
 			<div className='grid gap-16 md:gap-8 md:grid-cols-2 items-center'>
 				<div>
 					<div className='flex items-center mb-2 gap-5 justify-start font-extrabold'>
-						<span className='text-primary font-montserrat text-4xl md:text-5xl'>
+						<span className='bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent font-montserrat text-4xl md:text-5xl'>
 							Jasur
 						</span>
-						<span className='hidden xs:block text-primary font-montserrat text-4xl md:text-5xl'>
-							/
-						</span>
-						<span className='hidden xs:block bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent font-montserrat text-4xl md:text-5xl'>
-							JasX
-						</span>
+
 					</div>
 
 					<h2 className='text-2xl mb-2 font-semibold text-foreground'>
 						{t('hero.role')}
 					</h2>
 
-					<p className='text-muted-foreground max-w-[600px]'>
+					{/* <p className='text-muted-foreground max-w-[600px]'>
 						{t('hero.desc')}
-					</p>
+					</p> */}
 
 					<div className='flex gap-4 mt-5'>
 						<Button asChild>
