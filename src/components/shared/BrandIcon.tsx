@@ -1,9 +1,10 @@
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import LogoIcon from '../../assets/logoIcon.svg'
 
-export default function BrandIcon() {
+export default function BrandIcon({ page = '' }: { page?: string }) {
+	const { lang } = useParams()
 	return (
-		<Link to='/' className='flex items-center gap-3'>
+		<Link to={page === 'post' ? `/${lang}/blog` : `/${lang}`} className='flex items-center gap-3'>
 			<img
 				className='w-10 h-10 flex items-center gap-2'
 				src={LogoIcon}

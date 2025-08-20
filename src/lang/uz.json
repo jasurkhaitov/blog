@@ -1,4 +1,10 @@
 {
+	"title": {
+		"browse": "Jasurning Blogi",
+		"whoiam": "Jasurning Dehqonchilik Faolyati",
+		"blog": "Jasurning Blogi – Maqolalar va Postlar",
+		"contact": "Bog‘lanish"
+	},
 	"theme": {
 		"light": "Yorugʻ",
 		"dark": "Qorongʻi",
@@ -142,7 +148,7 @@
 			"title": "Blog",
 			"desc": "Blogdagi postlarim o‘zbek tilida yozilgan. Ingliz tilida internetda juda ko‘p ma’lumot mavjud. Mening maqsadim — ona tilimda ko‘proq kontent yaratib, o‘zbek auditoriyasiga foyda yetkazish."
 		},
-		
+
 		"searchInput": "Postlarni qidirish...",
 		"readBtn": "Postni o‘qish",
 		"pinned": "Qadalgan",

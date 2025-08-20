@@ -10,6 +10,10 @@ import AnimatedSection from '@/components/shared/AnimatedSection'
 export default function ContactPage() {
   const { t } = useTranslation()
 
+  useEffect(() => {
+    document.title = t("title.contact")
+  }, [t])
+
   const [isSending, setIsSending] = useState(false)
   const [buttonState, setButtonState] = useState({
     text: t('contact.sendButton'),
@@ -94,7 +98,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen max-w-7xl m-auto px-4 bg-background flex flex-col">
-      <Navbar />
+      <Navbar page='contact' />
 
       <main className="flex-grow w-full flex items-center justify-center mx-auto">
         <AnimatedSection>

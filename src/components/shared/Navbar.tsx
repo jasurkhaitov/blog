@@ -5,14 +5,14 @@ import { ModeToggle } from './ModeToggle'
 import NavbarMobile from './NavbarMobile'
 import { useTranslation } from 'react-i18next'
 
-export default function Navbar() {
+export default function Navbar({ page = '' }: { page?: string }) {
 	const { t } = useTranslation()
 	const { lang } = useParams()
 
 	return (
-		<header className='md:py-1 md:px-5 w-full border-b sticky top-0 z-40 py-1 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'>
+		<header className='md:py-1 px-3 md:px-5 w-full border-b sticky top-0 z-40 py-1 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'>
 			<div className='flex h-16 items-center justify-between'>
-				<BrandIcon />
+				<BrandIcon page={page} />
 
 				<div className='flex items-center gap-3 md:gap-6'>
 					<a
@@ -23,23 +23,27 @@ export default function Navbar() {
 						{t('nav.channel')}
 					</a>
 
-					<div className='hidden md:flex'>|</div>
+					{
+						page !== 'contact' && <><div className='hidden md:flex'>|</div>
 
-					<Link
-						to={`/${lang}/contact`}
-						className='hidden md:flex text-base text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white transition-all font-mono font-medium'
-					>
-						{t('nav.contact')}
-					</Link>
+							<Link
+								to={`/${lang}/contact`}
+								className='hidden md:flex text-base text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white transition-all font-mono font-medium'
+							>
+								{t('nav.contact')}
+							</Link></>
+					}
 
-					<div className='hidden md:flex'>|</div>
+					{
+						page !== 'blog' && page !== 'post' && <><div className='hidden md:flex'>|</div>
 
-					<Link
-						to={`/${lang}/blog`}
-						className='hidden md:flex text-base text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white transition-all font-mono font-medium'
-					>
-						{t('nav.blog')}
-					</Link>
+							<Link
+								to={`/${lang}/blog`}
+								className='hidden md:flex text-base text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white transition-all font-mono font-medium'
+							>
+								{t('nav.blog')}
+							</Link></>
+					}
 
 					<ModeToggle />
 
@@ -48,7 +52,7 @@ export default function Navbar() {
 					</div>
 
 					<div className='md:hidden'>
-						<NavbarMobile lang={lang} />
+						<NavbarMobile page={page} lang={lang} />
 					</div>
 				</div>
 			</div>

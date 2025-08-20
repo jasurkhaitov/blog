@@ -6,8 +6,17 @@ import BrowseSkills from '@/components/browse/BrowseSkills'
 import Contact from '@/components/shared/Contact'
 import Footer from '@/components/shared/Footer'
 import Navbar from '@/components/shared/Navbar'
+import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function BrowsePage() {
+
+	const { t } = useTranslation()
+
+	useEffect(() => {
+		document.title = t("title.browse")
+	}, [t])
+
 	return (
 		<div className='min-h-screen max-w-7xl m-auto px-4 bg-background'>
 			<Navbar />

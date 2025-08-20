@@ -1,6 +1,9 @@
 {
-	"pageTitles": {
-		
+	"title": {
+		"browse": "Jasur's Blog",
+		"whoiam": "Jasur's Career",
+		"blog": "Jasur's Blog - Articles, Posts",
+		"contact": "Get in Touch"
 	},
 	"theme": {
 		"light": "Light",

@@ -7,9 +7,14 @@ import WhoIAmDesc from '@/components/whoiam/WhoIAmDesc'
 import WhoIAmPodcasts from '@/components/whoiam/WhoIAmPodcasts'
 import WhoIAmContact from '@/components/whoiam/WhoIAmContact'
 import AnimatedSection from '@/components/shared/AnimatedSection'
+import { useEffect } from 'react'
 
 export default function WhoIAmPage() {
 	const { t } = useTranslation()
+
+	useEffect(() => {
+		document.title = t("title.whoiam")
+	}, [t])
 
 	return (
 		<div className='min-h-screen max-w-7xl m-auto px-4 bg-background'>

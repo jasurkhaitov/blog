@@ -14,9 +14,10 @@ import { useTranslation } from 'react-i18next'
 
 interface MobileNavProps {
 	lang?: string
+	page?: string
 }
 
-export default function NavbarMobile({ lang }: MobileNavProps) {
+export default function NavbarMobile({ lang, page }: MobileNavProps) {
 	const [open, setOpen] = useState(false)
 	const navigate = useNavigate()
 	const { t } = useTranslation()
@@ -53,32 +54,29 @@ export default function NavbarMobile({ lang }: MobileNavProps) {
 						{t('nav.channel')}
 					</a>
 
-					<Link
-						to={`/${currentLang}/blog`}
-						className='flex items-center gap-3 rounded-md px-4 py-3 border border-transparent hover:border-gray-300 dark:hover:border-gray-700 transition-all text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
-						onClick={() => setOpen(false)}
-					>
-						<BookOpen className='h-5 w-5' />
-						{t('nav.blog')}
-					</Link>
+					{
+						page !== 'blog' && page !== 'post' && <>
+							<Link
+								to={`/${currentLang}/blog`}
+								className='flex items-center gap-3 rounded-md px-4 py-3 border border-transparent hover:border-gray-300 dark:hover:border-gray-700 transition-all text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
+								onClick={() => setOpen(false)}
+							>
+								<BookOpen className='h-5 w-5' />
+								{t('nav.blog')}
+							</Link>
+						</>
+					}
 
-					{/* <Link
-						to={`/${currentLang}/whoiam`}
-						className='flex items-center gap-3 rounded-md px-4 py-3 border border-transparent hover:border-gray-300 dark:hover:border-gray-700 transition-all text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
-						onClick={() => setOpen(false)}
-					>
-						<User className='h-5 w-5' />
-						{t('nav.whoiam')}
-					</Link> */}
-
-					<Link
-						to={`/${currentLang}/contact`}
-						className='flex items-center gap-3 rounded-md px-4 py-3 border border-transparent hover:border-gray-300 dark:hover:border-gray-700 transition-all text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
-						onClick={() => setOpen(false)}
-					>
-						<Contact className='h-5 w-5' />
-						{t('nav.contact')}
-					</Link>
+					{
+						page !== 'contact' && <Link
+							to={`/${currentLang}/contact`}
+							className='flex items-center gap-3 rounded-md px-4 py-3 border border-transparent hover:border-gray-300 dark:hover:border-gray-700 transition-all text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
+							onClick={() => setOpen(false)}
+						>
+							<Contact className='h-5 w-5' />
+							{t('nav.contact')}
+						</Link>
+					}
 				</div>
 
 				<SheetDescription className='sr-only'></SheetDescription>
