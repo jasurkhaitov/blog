@@ -132,7 +132,6 @@
 		"watch": "YouTube’da ko'rish",
 		"contact": "Meni shu yerdan topishingiz mumkin"
 	},
-
 	"blog": {
 		"header": {
 			"init": "> shaxsiy blog ishga tushirilmoqda...",
@@ -162,6 +161,27 @@
 		"noblog": {
 			"title": "Hozircha blog postlari mavjud emas",
 			"desc": "Ayni paytda blogda hech qanday post topilmadi."
+		}
+	},
+	"post": {
+		"home": "Bosh sahifa",
+		"uz": "uz",
+		"ru": "ru",
+		"en": "en",
+		"share": {
+			"title": "Postni ulashish",
+			"copy": "Havolani nusxalash",
+			"copied": "Nusxalandi !",
+			"telegram": "Telegram",
+			"linkedln": "LinkedIn",
+			"x": "X — Twitter",
+			"reddit": "Reddit",
+			"vkontakte": "Vkontakte"
+		},
+		"back": "Asosiy sahifaga qaytish",
+		"subscribe": {
+			"title": "Obuna bo'ling",
+			"desc": "Yangi maqola va postlarimni Telegram kanalimda topishingiz mumkin"
 		}
 	}
 }

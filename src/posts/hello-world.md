@@ -1,109 +1,86 @@
-# Store it manually in your `posts` array
+# 📄 `PostPage` Component Documentation
 
-This is the simplest — you just add `date` (and maybe `time`) when you create the post entry in your `listOfPost` array.
+The `PostPage` component is responsible for rendering an individual blog post.
+It loads markdown content dynamically, displays metadata (date, language), and provides a sidebar with sharing options.
 
-```ts
-export const listOfPost = [
-  {
-    name: "Hello World",
-    slug: "hello-world",
-    date: "2025-08-14 18:02",
-    img: Img,
-    file: () => import("./hello-world.md?raw"),
-    pinned: false,
-  }
-]
+---
+
+## 🔑 Features
+
+> - Dynamically loads markdown content from a file.
+> - Shows a top loading bar while content is being fetched.
+> - Displays breadcrumbs navigation (`Home > Post`).
+> - Provides metadata (date, language).
+> - Includes a **SharePost** sidebar for social sharing.
+> - Responsive layout (stacks on mobile, sidebar on desktop).
+
+---
+
+## 🛠 Usage Example
+
+```tsx
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import PostPage from '@/pages/PostPage'
+
+function App() {
+	return (
+		<BrowserRouter>
+			<Routes>
+				{/* Example route: /en/blog/my-first-post */}
+				<Route path='/:lang/blog/:slug' element={<PostPage />} />
+			</Routes>
+		</BrowserRouter>
+	)
+}
 ```
 
-Pros:
-
-* Simple, no extra tooling.
-* Easy to customize (e.g., just “Jan 1, 2025” or full date-time).
-
-Cons:
-
-* You must remember to add it yourself every time.
-
 ---
 
-## **2️⃣ Put the date inside the Markdown itself (Frontmatter)**
+## 📂 Layout Explanation
 
-You can store metadata at the top of your `.md` file like this:
+> The layout uses a **two-column flexbox design**:
+>
+> - **Left Column:** The blog content (`MarkdownRenderer`).
+> - **Right Column:** The `SharePost` sidebar.
+> - On **mobile**, the sidebar moves below the content.
 
-```md
----
-title: Hello World
-date: 2025-08-14 18:02
-pinned: false
----
+```tsx
+<div className='flex flex-col md:flex-row w-full gap-8'>
+	{/* Blog Content */}
+	<div className='flex-1'>
+		{content ? <MarkdownRenderer content={content} /> : <p>Loading...</p>}
+	</div>
 
-# Hello World
-
-Salom Hammaga
+	{/* Sidebar */}
+	<div className='w-full md:w-64 shrink-0'>
+		<SharePost slug={slug!} title={post?.name || 'Blog Post'} />
+	</div>
+</div>
 ```
 
-Then, use a Markdown parser that supports **Frontmatter** (e.g., [`gray-matter`](https://www.npmjs.com/package/gray-matter)) to read it:
+---
 
-```ts
-import matter from 'gray-matter'
+## 📌 Props & Hooks
 
-post.file().then((res: { default: string }) => {
-  const { data, content } = matter(res.default)
-  console.log(data.date) // from frontmatter
-  setContent(content)
-})
-```
-
-Pros:
-
-* The metadata lives **with the content**.
-* You don’t have to maintain it in two places.
-
-Cons:
-
-* Slightly more setup (need to parse the Markdown).
+- `slug` (from `useParams`) → matches the blog post.
+- `lang` (from `useParams`) → for multi-language routing.
+- `listOfPost` → metadata (name, date, lang, file loader).
+- `MarkdownRenderer` → renders markdown with syntax highlighting.
+- `LoadingBar` → shows progress while fetching.
+- `SharePost` → provides share buttons.
 
 ---
 
-## **3️⃣ Auto-generate the date from the file creation time**
+## ✅ Example Behavior
 
-You can also grab the `.md` file’s creation date at build time using Node’s `fs.stat` (in a script that builds your posts array).
-This works if your posts list is generated automatically instead of hardcoded.
-
-Example build script:
-
-```js
-import fs from 'fs'
-import path from 'path'
-
-const postsDir = path.resolve('./src/posts')
-const posts = fs.readdirSync(postsDir).map(file => {
-  const stats = fs.statSync(path.join(postsDir, file))
-  return {
-    slug: file.replace('.md', ''),
-    date: stats.birthtime // creation date
-  }
-})
-```
-
-Pros:
-
-* Automatic, no typing dates yourself.
-* Always accurate to file creation.
-
-Cons:
-
-* Needs a build script step.
-* Won’t work purely in the browser.
+1. Navigate to `/en/blog/hello-world`.
+2. `PostPage` finds the post by `slug`.
+3. Markdown file is dynamically imported.
+4. `LoadingBar` animates until file finishes loading.
+5. Post content + metadata + share buttons are displayed.
 
 ---
 
-💡 If this is a **small personal portfolio blog**, I’d recommend **option 2 (frontmatter)** because:
+👉 Do you want me to also add **code comments directly inside your `PostPage.tsx`** so future readers can understand the logic line by line?
 
-* It keeps post data in one place.
-* It’s easy to maintain even if you move posts around.
-* Later, you can add more metadata (tags, author, etc.) easily.
-
----
-
-If you want, I can show you **a ready-to-use `MarkdownRenderer` that reads both the content and the frontmatter date** so your posts automatically display their creation time.
+[Youtube](https://www.youtube.com)

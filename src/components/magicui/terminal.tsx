@@ -98,7 +98,7 @@ export const Terminal = ({ children, className }: TerminalProps) => {
   return (
     <div
       className={cn(
-        "z-0 h-full min-h-[260px] w-full max-w-xl m-auto rounded-xl border border-border bg-background",
+        "z-0 h-full min-h-[235px] w-full max-w-xl m-auto rounded-xl border border-border bg-background",
         className,
       )}
     >

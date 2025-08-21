@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calendar, Languages, Pin, Link2, Check } from "lucide-react"
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { blogLangBadgeColor } from '@/helper/func'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
@@ -41,11 +41,13 @@ export function BlogPostCard({ post, searchTerm, viewMode }: BlogPostCardProps) 
 	const { t } = useTranslation()
 	const [copied, setCopied] = useState(false)
 
+	const { lang } = useParams()
+
 	const handleCopyLink = async (e: React.MouseEvent) => {
 		e.preventDefault()
 		e.stopPropagation()
 
-		const url = `https://www.jasurkhaitov.uz/posts/${post.slug}`
+		const url = `https://www.jasurkhaitov.uz/blog/${post.slug}`
 
 		try {
 			await navigator.clipboard.writeText(url)
@@ -105,7 +107,7 @@ export function BlogPostCard({ post, searchTerm, viewMode }: BlogPostCardProps) 
 								</div>
 
 								<div className="flex justify-start gap-2 mt-12">
-									<Link key={post.slug} to={`/posts/${post.slug}`}>
+									<Link key={post.slug} to={`/${lang}/blog/${post.slug}`}>
 										<Button className='h-8'>
 											{t("blog.readBtn")}
 										</Button>
@@ -179,7 +181,7 @@ export function BlogPostCard({ post, searchTerm, viewMode }: BlogPostCardProps) 
 					))}
 				</div>
 				<div className="flex gap-2">
-					<Link key={post.slug} to={`/posts/${post.slug}`} className="flex-1">
+					<Link key={post.slug} to={`/${lang}/blog/${post.slug}`} className="flex-1">
 						<Button className='h-8 w-full'>
 							{t("blog.readBtn")}
 						</Button>

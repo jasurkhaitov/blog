@@ -132,7 +132,6 @@
 		"watch": "Watch on Youtube",
 		"contact": "You can find me here"
 	},
-
 	"blog": {
 		"header": {
 			"init": "> initializing personal blog...",
@@ -162,6 +161,27 @@
 		"noblog": {
 			"title": "No blog posts yet",
 			"desc": "It looks like there are no blog posts available at the moment."
+		}
+	},
+	"post": {
+		"home": "Home",
+		"uz": "uz",
+		"ru": "ru",
+		"en": "en",
+		"share": {
+			"title": "Share Post",
+			"copy": "Copy link",
+			"copied": "Copied !",
+			"telegram": "Telegram",
+			"linkedln": "Linkedln",
+			"x": "X - Twitter",
+			"reddit": "Reddit",
+			"vkontakte": "Vkontakte"
+		},
+		"back": "Back to Main Page",
+		"subscribe": {
+			"title": "Subscribe",
+			"desc": "You can find my latest articles and posts on my Telegram channel"
 		}
 	}
 }

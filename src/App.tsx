@@ -70,7 +70,7 @@ export default function App() {
           <Route path="/blog" element={<RedirectToLanguage />} />
           <Route path="/contact" element={<RedirectToLanguage />} />
           <Route path="/whoiam" element={<RedirectToLanguage />} />
-          <Route path="/posts/:slug" element={<RedirectToLanguage />} />
+          <Route path="/blog/:slug" element={<RedirectToLanguage />} />
 
           <Route
             path="*"
@@ -101,7 +101,7 @@ function LanguageWrapper() {
     <Routes>
       <Route path="/" element={<BrowsePage />} />
       <Route path="/blog" element={<BlogPage />} />
-      <Route path="/posts/:slug" element={<PostPage />} />
+      <Route path="/blog/:slug" element={<PostPage />} />
       <Route path="/whoiam" element={<WhoIAmPage />} />
       <Route path="/contact" element={<ContactPage />} />
     </Routes>
