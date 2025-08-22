@@ -124,9 +124,9 @@ export default function BrowseAbout() {
 									</span>
 								</a>
 							</div>
-							<p className='text-gray-700 dark:text-gray-300 mb-4 leading-relaxed'>
+							{/* <p className='text-gray-700 dark:text-gray-300 mb-4 leading-relaxed'>
 								{t('about.experience-current-description')}
-							</p>
+							</p> */}
 							<div className='flex flex-wrap gap-2'>
 								{[
 									'Angular',
@@ -164,9 +164,9 @@ export default function BrowseAbout() {
 									<span>{t('about.experience-freelance-company')}</span>
 								</div>
 							</div>
-							<p className='text-gray-700 dark:text-gray-300 mb-4 leading-relaxed'>
+							{/* <p className='text-gray-700 dark:text-gray-300 mb-4 leading-relaxed'>
 								{t('about.experience-freelance-description')}
-							</p>
+							</p> */}
 							<div className='flex flex-wrap gap-2'>
 								{['JavaScript', 'TypeScript', 'React.js', 'Next.js'].map(
 									tech => (

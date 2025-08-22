@@ -2,13 +2,13 @@ import { Navigate, Route, Routes, useParams, useLocation } from "react-router"
 import { lazy, Suspense, useEffect } from "react"
 import { useTranslation } from "react-i18next"
 import { Loader } from "lucide-react"
-import PostPage from "./pages/PostPage"
 import { useYandexMetrica } from './hooks/useYandexMetrica'
 
 const BrowsePage = lazy(() => import("./pages/BrowsePage"))
 const BlogPage = lazy(() => import("./pages/BlogPage"))
 const ContactPage = lazy(() => import("./pages/ContactPage"))
 const WhoIAmPage = lazy(() => import("./pages/WhoIAmPage"))
+const PostPage = lazy(() => import("./pages/PostPage"))
 
 function RedirectToLanguage() {
   const location = useLocation()
@@ -104,6 +104,8 @@ function LanguageWrapper() {
       <Route path="/blog/:slug" element={<PostPage />} />
       <Route path="/whoiam" element={<WhoIAmPage />} />
       <Route path="/contact" element={<ContactPage />} />
+
+      <Route path="*" element={<Navigate to={`/${lang}`} replace />} />
     </Routes>
   )
 }

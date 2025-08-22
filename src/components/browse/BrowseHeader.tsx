@@ -16,7 +16,7 @@ export default function BrowseHeader() {
 				<div>
 					<div className='flex items-center mb-2 gap-5 justify-start font-extrabold'>
 						<span className='bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent font-montserrat text-4xl md:text-5xl'>
-							Jasur
+							Jasur Xaitov
 						</span>
 
 					</div>
