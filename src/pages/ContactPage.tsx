@@ -102,7 +102,7 @@ export default function ContactPage() {
 
       <main className="flex-grow w-full flex items-center justify-center mx-auto">
         <AnimatedSection>
-          <div className="bg-card w-md p-6 rounded-lg shadow-sm">
+          <div className="bg-card w-xs xs:w-sm sm:w-md p-6 rounded-lg shadow-sm">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="flex flex-col items-start gap-2">
