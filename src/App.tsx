@@ -1,8 +1,8 @@
 import { Navigate, Route, Routes, useParams, useLocation } from "react-router"
 import { lazy, Suspense, useEffect } from "react"
 import { useTranslation } from "react-i18next"
-import { Loader } from "lucide-react"
 import { useYandexMetrica } from './hooks/useYandexMetrica'
+import Atom from "react-loading-indicators/Atom"
 
 const BrowsePage = lazy(() => import("./pages/BrowsePage"))
 const BlogPage = lazy(() => import("./pages/BlogPage"))
@@ -55,7 +55,7 @@ export default function App() {
       <Suspense
         fallback={
           <div className="min-h-screen flex items-center justify-center">
-            <Loader className="animate-spin w-10 h-10" />
+            <Atom color="#315ecc" size="medium" />
           </div>
         }
       >
