@@ -1,34 +1,34 @@
-// import Img from "../assets/example.webp"/*  */
+import Img from "../assets/example.webp"/*  */
 
 export const listOfPost = [
-  // {
-  //   id: 1,
-  //   img: Img,
-  //   hashtag: [
-  //     {
-  //       name: '#js',
-  //       color: 'text-yellow-600',
-  //     },
-  //     {
-  //       name: '#ts',
-  //       color: 'text-blue-700',
-  //     },
-  //     {
-  //       name: '#html',
-  //       color: 'text-orange-600',
-  //     },
-  //     {
-  //       name: '#css',
-  //       color: ' text-indigo-600',
-  //     }
-  //   ],
-  //   name: "Hello World",
-  //   slug: "hello-world",
-  //   date: "2025-08-14 18:02",
-  //   file: () => import("./hello-world.md?raw"),
-  //   pinned: false,
-  //   lang: 'uz'
-  // },
+  {
+    id: 1,
+    img: Img,
+    hashtag: [
+      {
+        name: '#js',
+        color: 'text-yellow-600',
+      },
+      {
+        name: '#ts',
+        color: 'text-blue-700',
+      },
+      {
+        name: '#html',
+        color: 'text-orange-600',
+      },
+      {
+        name: '#css',
+        color: ' text-indigo-600',
+      }
+    ],
+    name: "Hello World",
+    slug: "hello-world",
+    date: "2025-08-14 18:02",
+    file: () => import("./hello-world.md?raw"),
+    pinned: false,
+    lang: 'uz'
+  },
   // {
   //   id: 2,
   //   img: Img,
